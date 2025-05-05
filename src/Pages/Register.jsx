@@ -36,7 +36,7 @@ const Register = () => {
   return (
     <div className="card bg-base-100 w-full max-w-sm mx-auto mt-10 shrink-0 shadow-2xl">
       <div className="card-body">
-        <h1 className="text-center text-xl">Register your account</h1>
+        <h2 className="text-center">Register your account</h2>
         <hr className="border-base-300 my-3" />
 
         <form onSubmit={handleRegister} className="fieldset">
@@ -82,7 +82,7 @@ const Register = () => {
             Accept terms & conditions
           </label>
 
-          <button type="submit" className="btn btn-primary mt-4">
+          <button type="submit" className="btn btn-primary mt-4 text-white">
             Register
           </button>
         </form>

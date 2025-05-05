@@ -1,14 +1,18 @@
 import React, { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../Provider/AuthContext";
+
+// Login Component
 const Login = () => {
   const location = useLocation();
-  const { setUser, loginUser, setLoading, googleLogin } =
-    useContext(AuthContext);
   const navigate = useNavigate();
   const [errorMessage, setErrorMessage] = useState("");
 
-  // Handle Google
+  // Context
+  const { setUser, loginUser, setLoading, googleLogin } =
+    useContext(AuthContext);
+
+  // Handle Google SignIn
   const handleGoogleSignIn = () => {
     googleLogin()
       .then((result) => {
@@ -40,9 +44,9 @@ const Login = () => {
   };
 
   return (
-    <div className="card bg-base-100 w-full max-w-sm mx-auto mt-10 shrink-0 shadow-2xl">
+    <div className="card bg-base-100 w-full max-w-sm mx-auto mt-20 shrink-0 shadow-2xl">
       <div className="card-body">
-        <h1 className="text-center text-xl">Login your account</h1>
+        <h2 className="text-center">Login your account</h2>
         <hr className="border-base-300 my-3" />
         <form onSubmit={handleLoginForm} className="fieldset">
           {/* Email */}
@@ -64,23 +68,23 @@ const Login = () => {
           <div>
             <a className="link link-hover">Forgot password?</a>
           </div>
-          <button type="submit" className="btn btn-primary mt-4">
+          <button type="submit" className="btn btn-primary mt-4 text-white">
             Login
           </button>
         </form>
         {/* Error */}
         <p className="text-red-500">{errorMessage}</p>
 
-        <p className="text-center">
-          Don't have an account?{" "}
-          <Link className="text-red-600" to="/auth/register">
-            Register
-          </Link>
-        </p>
-        {/* Google */}
+        {/* Or */}
+        <div className="flex items-center gap-2 my-2">
+          <hr className="flex-grow text-gray-300" />
+          <span className="text-gray-300">or</span>
+          <hr className="flex-grow text-gray-300" />
+        </div>
+        {/* Google Button*/}
         <button
           onClick={handleGoogleSignIn}
-          className="btn bg-white text-black border-[#e5e5e5]"
+          className="btn bg-white text-black border-primary"
         >
           <svg
             aria-label="Google logo"
@@ -111,6 +115,12 @@ const Login = () => {
           </svg>
           Login with Google
         </button>
+        <p className="text-center">
+          Don't have an account?{" "}
+          <Link className="text-red-600" to="/auth/register">
+            Register
+          </Link>
+        </p>
       </div>
     </div>
   );
