@@ -1,28 +1,28 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../Provider/AuthContext";
+import Swal from "sweetalert2";
 
 // Login Component
 const Login = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const [errorMessage, setErrorMessage] = useState("");
+  const emailRef = useRef();
+  console.log();
 
   // Context
-  const { setUser, loginUser, setLoading, googleLogin } =
+  const { setUser, loginUser, setLoading, googleLogin, resetPassword } =
     useContext(AuthContext);
 
   // Handle Google SignIn
   const handleGoogleSignIn = () => {
     googleLogin()
-      .then((result) => {
-        console.log(result);
-      })
+      .then(() => {})
       .catch((error) => {
         setErrorMessage(error.message);
       });
   };
-
   // Handle Login
   const handleLoginForm = (e) => {
     e.preventDefault();
@@ -36,8 +36,22 @@ const Login = () => {
       .then((result) => {
         setUser(result);
         setLoading(false);
+        Swal.fire({
+          title: "Good job!",
+          text: "You have logged in successfully!",
+          icon: "success",
+        });
         navigate(location.state || "/");
       })
+      .catch((error) => {
+        setErrorMessage(error.message);
+      });
+  };
+  // Reset Password
+  const handleForgetPassword = () => {
+    const email = emailRef.current.value;
+    resetPassword(email)
+      .then()
       .catch((error) => {
         setErrorMessage(error.message);
       });
@@ -54,6 +68,7 @@ const Login = () => {
           <input
             type="email"
             name="email"
+            ref={emailRef}
             className="input"
             placeholder="Enter your email address"
           />
@@ -65,7 +80,7 @@ const Login = () => {
             className="input"
             placeholder="Enter your password"
           />
-          <div>
+          <div onClick={handleForgetPassword}>
             <a className="link link-hover">Forgot password?</a>
           </div>
           <button type="submit" className="btn btn-primary mt-4 text-white">
@@ -84,7 +99,7 @@ const Login = () => {
         {/* Google Button*/}
         <button
           onClick={handleGoogleSignIn}
-          className="btn bg-white text-black border-primary"
+          className="btn bg-white text-black mb-4 border-primary"
         >
           <svg
             aria-label="Google logo"

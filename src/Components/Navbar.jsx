@@ -53,7 +53,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">Subnestic</a>
+        <h3>Subnestic</h3>
       </div>
 
       {/* Menubar for Large Device */}
