@@ -19,10 +19,10 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar bg-base-100 shadow-sm">
+    <div className="navbar bg-base-100 border border-b-slate-200 border-x-0 sha border-t-0 px-0">
       <div className="navbar-start">
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+          <div tabIndex={0} role="button" className="btn btn-ghost md:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -49,22 +49,22 @@ const Navbar = () => {
               <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <NavLink>My Profile</NavLink>
+              <NavLink to="myProfile">My Profile</NavLink>
             </li>
           </ul>
         </div>
-        <h3>Subnestic</h3>
+        <h2 className="text-primary">Subnestic</h2>
       </div>
 
       {/* Menubar for Large Device */}
-      <div className="navbar-center hidden lg:flex">
+      <div className="navbar-center hidden md:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <NavLink>Home</NavLink>
+            <NavLink to="/">Home</NavLink>
           </li>
 
           <li>
-            <NavLink>My Profile</NavLink>
+            <NavLink to="/myProfile">My Profile</NavLink>
           </li>
         </ul>
       </div>

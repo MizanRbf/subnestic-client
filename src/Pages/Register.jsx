@@ -89,7 +89,7 @@ const Register = () => {
           <input
             type="text"
             name="name"
-            className="input"
+            className="input w-full"
             placeholder="Enter your Name"
             required
           />
@@ -98,7 +98,7 @@ const Register = () => {
           <input
             type="text"
             name="photo"
-            className="input"
+            className="input w-full"
             placeholder="Enter your photo url"
             required
           />
@@ -107,7 +107,7 @@ const Register = () => {
           <input
             type="email"
             name="email"
-            className="input"
+            className="input  w-full"
             placeholder="Enter your email address"
             required
           />
@@ -117,7 +117,7 @@ const Register = () => {
             <input
               type={showPassword ? "text" : "password"}
               name="password"
-              className="input"
+              className="input  w-full"
               placeholder="Enter your password"
               required
             />

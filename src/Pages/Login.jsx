@@ -69,7 +69,7 @@ const Login = () => {
             type="email"
             name="email"
             ref={emailRef}
-            className="input"
+            className="input w-full"
             placeholder="Enter your email address"
           />
           {/* Password */}
@@ -77,7 +77,7 @@ const Login = () => {
           <input
             type="password"
             name="password"
-            className="input"
+            className="input w-full"
             placeholder="Enter your password"
           />
           <div onClick={handleForgetPassword}>
