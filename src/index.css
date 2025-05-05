@@ -12,6 +12,13 @@
   --color-base-300: #f4f4f4;
 }
 
+button{
+  @apply btn bg-primary text-white
+}
+p{
+@apply text-sm text-slate-800
+}
+
 *{
   font-family: "Poppins", sans-serif;
 }
@@ -25,4 +32,10 @@ h2{
 }
 h3{
   @apply text-xl font-semibold;
+}
+h4{
+  @apply text-lg font-semibold;
+}
+h5{
+  @apply font-semibold;
 }

@@ -5,6 +5,7 @@ import { AuthContext } from "../Provider/AuthContext";
 const Navbar = () => {
   const { user, logOut } = use(AuthContext);
   const navigate = useNavigate();
+  const isHome = location.pathname === "/";
 
   // sign out
   const handleSignOut = () => {
@@ -19,7 +20,10 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar bg-base-100 border border-b-slate-200 border-x-0 sha border-t-0 px-0">
+    <div className="navbar bg-base-100 px-0 max-w-[1200px] mx-auto py-4">
+      {!isHome && (
+        <div className="absolute border-b border-slate-200 w-full top-[84px] left-0 right-0"></div>
+      )}
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost md:hidden">

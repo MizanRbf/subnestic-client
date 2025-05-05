@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "name": "Global Snack Crate",
+    "category": "Food & Culture",
+    "thumbnail": "https://i.ibb.co.com/sJNrRJVK/Munch-Pak-Snack-Box-5-Count-Individually-Wrapped-Full-Sized-Snacks-from-Around-the-World-0d0e82ad-95.webp",
+    "banner": "https://snackverse.com/images/snackverse-banner.jpg",
+    "frequency": "Monthly",
+    "price": 29.99,
+    "description": "Enjoy a handpicked selection of international snacks from a different country every month.",
+    "features": [
+      "10+ Unique Snacks",
+      "Cultural Facts Booklet",
+      "Surprise Treat Item"
+    ],
+    "subscription_benefits": [
+      "Early Access to Rare Snacks",
+      "Exclusive Country Stickers",
+      "Member-Only Tasting Polls"
+    ],
+    "ratings": 4.7,
+    "number_of_reviews": 482
+  },
+  {
+    "id": 2,
+    "name": "Book Haven Box",
+    "category": "Books & Literature",
+    "thumbnail": "https://i.ibb.co.com/BHrLTXhG/download.jpg",
+    "banner": "https://example.com/images/book-box-banner.jpg",
+    "frequency": "Monthly",
+    "price": 24.99,
+    "description": "Discover bestselling novels, indie gems, and exclusive author content in every box.",
+    "features": [
+      "1 Hardcover Book",
+      "Bookmark and Notebook",
+      "Author Interview Letter"
+    ],
+    "subscription_benefits": [
+      "Access to Virtual Book Club",
+      "Exclusive Author Q&A",
+      "Early Preview of Next Month's Title"
+    ],
+    "ratings": 4.9,
+    "number_of_reviews": 395
+  },
+  {
+    "id": 3,
+    "name": "PetPal Surprise Box",
+    "category": "Pets",
+    "thumbnail": "https://i.ibb.co.com/G4TmGw20/petsubscriptionboxes-lowres-3908.webp",
+    "banner": "https://example.com/images/pet-box-banner.jpg",
+    "frequency": "Bi-Monthly",
+    "price": 34.99,
+    "description": "Delight your pet with premium toys, treats, and grooming supplies every two months.",
+    "features": [
+      "Customized by Pet Type & Size",
+      "Natural & Organic Treats",
+      "Durable Toys"
+    ],
+    "subscription_benefits": [
+      "Free Birthday Gift",
+      "Access to Vet Webinars",
+      "Points System for Rewards"
+    ],
+    "ratings": 4.6,
+    "number_of_reviews": 278
+  },
+  {
+    "id": 4,
+    "name": "ZenLife Wellness Kit",
+    "category": "Health & Wellness",
+    "thumbnail": "https://i.ibb.co.com/gFByLVqb/download.jpg",
+    "banner": "https://example.com/images/wellness-box-banner.jpg",
+    "frequency": "Monthly",
+    "price": 39.95,
+    "description": "A mindful collection of wellness tools, aromatherapy, and self-care products to reduce stress.",
+    "features": [
+      "Essential Oils & Candles",
+      "Mindfulness Journal",
+      "Herbal Teas"
+    ],
+    "subscription_benefits": [
+      "Access to Meditation Tracks",
+      "Member Discounts on Retreats",
+      "Free Digital Wellness Guides"
+    ],
+    "ratings": 4.8,
+    "number_of_reviews": 342
+  },
+  {
+    "id": 5,
+    "name": "Mini Garden Box",
+    "category": "Gardening",
+    "thumbnail": "https://i.ibb.co.com/Z16y9hV6/download.jpg",
+    "banner": "https://example.com/images/garden-box-banner.jpg",
+    "frequency": "Quarterly",
+    "price": 44.00,
+    "description": "Grow your indoor garden with seasonal seeds, pots, and tools – perfect for small spaces.",
+    "features": [
+      "3 Seasonal Seed Packs",
+      "Biodegradable Pots",
+      "Beginner Tools Kit"
+    ],
+    "subscription_benefits": [
+      "How-To Videos Access",
+      "Plant Care Calendar",
+      "Grow-Along Community Group"
+    ],
+    "ratings": 4.5,
+    "number_of_reviews": 167
+  },
+  {
+    "id": 6,
+    "name": "DIY Crafts & Creatives Box",
+    "category": "Arts & Crafts",
+    "thumbnail": "https://i.ibb.co.com/JW9D15Zm/download.jpg",
+    "banner": "https://www.realsimple.com/thmb/0kE1qN3xE7nKz1qJv3eZ6Qb0Xx8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/adults-and-crafts-crate-7107404-1-2000-1f6a3e1b9c7a4e1c9e3b4b5f6c8a9e2a.jpg",
+    "frequency": "Monthly",
+    "price": 27.50,
+    "description": "Unleash your creativity with fun DIY projects and craft supplies delivered monthly.",
+    "features": [
+      "Complete DIY Craft Kit",
+      "Step-by-Step Instructions",
+      "Bonus Decorative Items"
+    ],
+    "subscription_benefits": [
+      "Craft Challenge Contests",
+      "Access to Creator Gallery",
+      "Monthly Live Tutorial"
+    ],
+    "ratings": 4.7,
+    "number_of_reviews": 219
+  }
+]

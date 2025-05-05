@@ -31,35 +31,35 @@ export default function Slider() {
       >
         <SwiperSlide>
           <img
-            className="w-full h-[400px] rounded-md"
+            className="w-full h-[400px]"
             src="https://i.ibb.co.com/Lz23Wh0Y/smart-home-interface-with-augmented-realty-iot-object-interior-design-756748-3188.jpg"
             alt=""
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            className="w-full h-[400px] rounded-md"
+            className="w-full h-[400px]"
             src="https://i.ibb.co.com/v4K51Gvw/kitchen-counter-with-remote-control-it-intelligent-home-automation-system-adjusts-lighting-temperatu.jpg"
             alt=""
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            className="w-full h-[400px] rounded-md"
+            className="w-full h-[400px]"
             src="https://i.ibb.co.com/qLJjS8qq/Figure2-Smart-Home.webp"
             alt=""
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            className="w-full h-[400px] rounded-md"
+            className="w-full h-[400px]"
             src="https://i.ibb.co.com/vv4k3zr1/images.jpg"
             alt=""
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            className="w-full h-[400px] rounded-md"
+            className="w-full h-[400px]"
             src="https://i.ibb.co.com/GfYHnzr5/smart-home-interface-with-augmented-realty-iot-object-interior-design-756748-3157.jpg"
             alt=""
           />
