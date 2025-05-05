@@ -2,12 +2,20 @@ import React, { use, useState } from "react";
 import { Link, useNavigate } from "react-router";
 import { AuthContext } from "../Provider/AuthContext";
 import Swal from "sweetalert2";
+import { FaEye } from "react-icons/fa";
+import { LuEyeClosed } from "react-icons/lu";
 
 // Register Component
 const Register = () => {
   const navigate = useNavigate();
   const [errorMessage, setErrorMessage] = useState("");
   const [passError, setPassError] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+
+  // Handle ShowPassword
+  const handleShowPassword = () => {
+    setShowPassword(!showPassword);
+  };
 
   // Context
   const { createUser, updateUser, googleLogin } = use(AuthContext);
@@ -105,13 +113,22 @@ const Register = () => {
           />
           {/* Password */}
           <label className="label">Password</label>
-          <input
-            type="password"
-            name="password"
-            className="input"
-            placeholder="Enter your password"
-            required
-          />
+          <div className="relative">
+            <input
+              type={showPassword ? "text" : "password"}
+              name="password"
+              className="input"
+              placeholder="Enter your password"
+              required
+            />
+            <button
+              className="absolute top-3 right-8 cursor-pointer"
+              onClick={handleShowPassword}
+            >
+              {showPassword ? <FaEye size={15} /> : <LuEyeClosed size={15} />}
+            </button>
+          </div>
+
           <p className="text-red-500">{passError}</p>
           {/* CheckBox */}
           <label className="label">
