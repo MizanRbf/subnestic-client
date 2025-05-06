@@ -1,4 +1,4 @@
-import React, { use, useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router";
 import { AuthContext } from "../Provider/AuthContext";
 import Swal from "sweetalert2";
@@ -18,7 +18,7 @@ const Register = () => {
   };
 
   // Context
-  const { createUser, updateUser, googleLogin } = use(AuthContext);
+  const { createUser, updateUser, googleLogin } = useContext(AuthContext);
 
   // Handle Google SignIn
   const handleGoogleSignIn = () => {

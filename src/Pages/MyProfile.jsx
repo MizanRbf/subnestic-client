@@ -2,9 +2,25 @@ import React, { useContext } from "react";
 import { AuthContext } from "../Provider/AuthContext";
 
 const MyProfile = () => {
-  const { user } = useContext(AuthContext);
-  console.log(user);
+  const { updateUser, user, setUser } = useContext(AuthContext);
+
   const { displayName, email, photoURL } = user;
+
+  const handleUpdateProfile = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const name = e.target.name.value;
+    const photo = e.target.photo.value;
+
+    // Update User
+    updateUser({ displayName: name, photoURL: photo })
+      .then(() => {
+        setUser({ ...user, displayName: name, photoURL: photo });
+        form.reset();
+      })
+      .catch();
+  };
+
   return (
     <div className="max-w-[1200px] mx-auto mt-10">
       {/* My Profile */}
@@ -25,7 +41,7 @@ const MyProfile = () => {
 
           {/* Profile Name and Photo Update form */}
           <h4>Update Your Profile</h4>
-          <form className="fieldset">
+          <form onSubmit={handleUpdateProfile} className="fieldset">
             {/* Name */}
             <label className="label">Update Name</label>
             <input
