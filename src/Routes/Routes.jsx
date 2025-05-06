@@ -6,6 +6,7 @@ import AuthLayout from "../Layouts/AuthLayout";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
 import MyProfile from "../Pages/MyProfile";
+import BoxDetails from "../Pages/BoxDetails";
 
 export const router = createBrowserRouter([
   {
@@ -36,6 +37,11 @@ export const router = createBrowserRouter([
         element: <Register></Register>,
       },
     ],
+  },
+  {
+    path: "/boxDetails/:id",
+    loader: () => fetch("/subscription_box.json"),
+    element: <BoxDetails></BoxDetails>,
   },
   {
     path: "/*",
