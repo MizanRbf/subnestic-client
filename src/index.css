@@ -12,12 +12,15 @@
   --color-base-300: #f4f4f4;
 }
 
+.custom-width{
+  width: 100%;
+}
 button{
-  @apply btn bg-primary text-white
+  @apply btn bg-primary text-white hover:bg-lime-600
 }
-p{
+/* p{
 @apply text-sm text-slate-800
-}
+} */
 
 *{
   font-family: "Poppins", sans-serif;

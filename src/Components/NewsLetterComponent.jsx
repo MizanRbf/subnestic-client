@@ -46,11 +46,9 @@ const NewsLetterComponent = () => {
           className="border w-full border-slate-300 py-3 rounded-sm pl-2"
         />
         <br />
-        <input
-          type="button"
-          value="Subscribe"
-          className="py-3 bg-primary text-white w-full px-3 rounded-sm cursor-pointer"
-        />
+        <button className="custom-width py-3 bg-primary text-white w-full rounded-sm">
+          Subscribe
+        </button>
       </form>
     </div>
   );
