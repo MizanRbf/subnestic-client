@@ -34,13 +34,13 @@ const Login = () => {
     // Login User
     loginUser(email, password)
       .then((result) => {
-        setUser(result);
+        setUser(result.user);
         setLoading(false);
-        // Swal.fire({
-        //   title: "Good job!",
-        //   text: "You have logged in successfully!",
-        //   icon: "success",
-        // });
+        Swal.fire({
+          title: "Good job!",
+          text: "You have logged in successfully!",
+          icon: "success",
+        });
         navigate(location.state || "/");
       })
       .catch((error) => {
