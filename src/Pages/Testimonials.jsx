@@ -9,7 +9,8 @@ const Testimonials = () => {
       <header className="w-11/12 mx-auto">
         <Navbar></Navbar>
       </header>
-      <main className="w-11/12 mx-auto min-h-[calc(100vh-288px)]">
+      <main className="w-11/12 mx-auto min-h-[calc(100vh-425px)] mt-30">
+        <h2 className="mb-6">Customer Testimonials</h2>
         <TestimonialsSlider></TestimonialsSlider>
       </main>
       <footer>

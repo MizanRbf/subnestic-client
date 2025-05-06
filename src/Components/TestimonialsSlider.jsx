@@ -14,7 +14,7 @@ import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
 
 export default function TestimonialsSlider() {
   return (
-    <div>
+    <div className="">
       <Swiper
         effect={"coverflow"}
         grabCursor={true}

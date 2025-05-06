@@ -16,7 +16,7 @@ const Home = () => {
 
       {/* Subscription Services */}
       <div className="mt-20">
-        <h2 className="mb-4">Subscription Services</h2>
+        <h2 className="mb-4 text-primary">Subscription Services</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
           {subBoxData.map((subBox) => (
             <SubBoxContainer subBox={subBox}></SubBoxContainer>
@@ -26,13 +26,13 @@ const Home = () => {
 
       {/* Extra-1 */}
       <div className="mt-20">
-        <h2 className="mb-4">Customer Testimonials</h2>
+        <h2 className="mb-4 text-primary">Customer Testimonials</h2>
         <TestimonialsSlider></TestimonialsSlider>
       </div>
 
       {/* Extra-2 */}
-      <div className="mt-20">
-        <h2 className="mb-4">Get Surprises in Your Inbox!</h2>
+      <div className="mt-30 mb-20">
+        <h2 className="mb-4 text-primary">Get Surprises in Your Inbox!</h2>
         <NewsLetterComponent></NewsLetterComponent>
       </div>
     </div>
