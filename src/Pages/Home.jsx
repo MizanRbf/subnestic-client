@@ -2,7 +2,8 @@ import React from "react";
 import Slider from "../Components/Slider";
 import SubBoxContainer from "../Components/SubBoxContainer";
 import { useLoaderData } from "react-router";
-import Testimonials from "./Testimonials";
+import TestimonialsSlider from "../Components/TestimonialsSlider";
+import NewsLetterComponent from "../Components/NewsLetterComponent";
 
 const Home = () => {
   const subBoxData = useLoaderData();
@@ -26,12 +27,13 @@ const Home = () => {
       {/* Extra-1 */}
       <div className="mt-20">
         <h2 className="mb-4">Customer Testimonials</h2>
-        <Testimonials></Testimonials>
+        <TestimonialsSlider></TestimonialsSlider>
       </div>
 
       {/* Extra-2 */}
       <div className="mt-20">
         <h2 className="mb-4">Get Surprises in Your Inbox!</h2>
+        <NewsLetterComponent></NewsLetterComponent>
       </div>
     </div>
   );

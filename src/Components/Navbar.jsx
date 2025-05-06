@@ -53,6 +53,12 @@ const Navbar = () => {
               <NavLink to="/">Home</NavLink>
             </li>
             <li>
+              <NavLink to="/testimonials">Testimonials</NavLink>
+            </li>
+            <li>
+              <NavLink to="/newsLetter">NewsLetter</NavLink>
+            </li>
+            <li>
               <NavLink to="myProfile">My Profile</NavLink>
             </li>
           </ul>
@@ -66,7 +72,12 @@ const Navbar = () => {
           <li>
             <NavLink to="/">Home</NavLink>
           </li>
-
+          <li>
+            <NavLink to="/testimonials">Testimonials</NavLink>
+          </li>
+          <li>
+            <NavLink to="/newsLetter">NewsLetter</NavLink>
+          </li>
           <li>
             <NavLink to="/myProfile">My Profile</NavLink>
           </li>

@@ -9,6 +9,8 @@ import MyProfile from "../Pages/MyProfile";
 import BoxDetails from "../Pages/BoxDetails";
 import PrivateRoute from "../Provider/PrivateRoute";
 import Loader from "../Components/Loader";
+import Testimonials from "../Pages/Testimonials";
+import NewsLetter from "../Pages/NewsLetter";
 
 export const router = createBrowserRouter([
   {
@@ -54,6 +56,14 @@ export const router = createBrowserRouter([
         <BoxDetails></BoxDetails>
       </PrivateRoute>
     ),
+  },
+  {
+    path: "/testimonials",
+    element: <Testimonials></Testimonials>,
+  },
+  {
+    path: "/newsLetter",
+    element: <NewsLetter></NewsLetter>,
   },
   {
     path: "/*",

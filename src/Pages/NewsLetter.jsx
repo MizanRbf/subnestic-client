@@ -1,16 +1,16 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
-import TestimonialsSlider from "../Components/TestimonialsSlider";
+import NewsLetterComponent from "../Components/NewsLetterComponent";
 
-const Testimonials = () => {
+const NewsLetter = () => {
   return (
     <div>
       <header className="w-11/12 mx-auto">
         <Navbar></Navbar>
       </header>
       <main className="w-11/12 mx-auto min-h-[calc(100vh-288px)]">
-        <TestimonialsSlider></TestimonialsSlider>
+        <NewsLetterComponent></NewsLetterComponent>
       </main>
       <footer>
         <Footer></Footer>
@@ -19,4 +19,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials;
+export default NewsLetter;
