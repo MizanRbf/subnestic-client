@@ -26,11 +26,13 @@ const AuthProvider = ({ children }) => {
 
   // Update User
   const updateUser = (updatedData) => {
+    setLoading(true);
     return updateProfile(auth.currentUser, updatedData);
   };
 
   // Reset Password
   const resetPassword = (email) => {
+    setLoading(true);
     return sendPasswordResetEmail(auth, email);
   };
 
@@ -43,6 +45,7 @@ const AuthProvider = ({ children }) => {
   // Google Login
 
   const googleLogin = () => {
+    setLoading(true);
     return signInWithPopup(auth, provider);
   };
 

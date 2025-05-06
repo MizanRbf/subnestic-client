@@ -17,7 +17,7 @@ const BoxDetailsCard = ({ subBox }) => {
 
   return (
     <div className="min-h-[calc(100vh-288px)] flex justify-center items-center">
-      <div className="border border-slate-100 rounded-lg p-6 space-y-1 shadow-sm flex flex-col md:flex-row items-center justify-center">
+      <div className="border border-slate-100 rounded-lg p-6 space-y-1 shadow-sm flex flex-col md:flex-row items-center justify-center gap-10">
         {/* Image */}
         <div>
           <img

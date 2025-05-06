@@ -36,11 +36,11 @@ const Login = () => {
       .then((result) => {
         setUser(result);
         setLoading(false);
-        Swal.fire({
-          title: "Good job!",
-          text: "You have logged in successfully!",
-          icon: "success",
-        });
+        // Swal.fire({
+        //   title: "Good job!",
+        //   text: "You have logged in successfully!",
+        //   icon: "success",
+        // });
         navigate(location.state || "/");
       })
       .catch((error) => {
