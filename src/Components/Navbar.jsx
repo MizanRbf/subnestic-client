@@ -1,9 +1,9 @@
-import React, { use } from "react";
+import React, { useContext } from "react";
 import { Link, NavLink, useNavigate } from "react-router";
 import { AuthContext } from "../Provider/AuthContext";
 
 const Navbar = () => {
-  const { user, logOut } = use(AuthContext);
+  const { user, logOut } = useContext(AuthContext);
   const navigate = useNavigate();
   const isHome = location.pathname === "/";
 
@@ -85,7 +85,21 @@ const Navbar = () => {
       </div>
 
       {/* Login Button */}
-      <div className="navbar-end">
+      <div className="navbar-end gap-3">
+        {/* User Info */}
+        {user && (
+          <div className="relative group cursor-pointer">
+            <img
+              className=" rounded-full min-w-[40px] h-[40px]"
+              src={user.photoURL}
+              alt="User"
+            />
+            <div className="absolute bottom-[10px] text-primary -left-[60px] -translate-x-1/2 text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-10">
+              {user.displayName || "User"}
+            </div>
+          </div>
+        )}
+
         {user ? (
           <button
             onClick={handleSignOut}
