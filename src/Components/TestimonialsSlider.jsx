@@ -49,8 +49,11 @@ export default function TestimonialsSlider() {
         className="mySwiper"
       >
         {testimonials.map((testimonial) => (
-          <SwiperSlide className="w-[300px]">
-            <div className="bg-white p-6 rounded-tl-2xl rounded-tr-2xl rounded-bl-[60px] rounded-br-[60px] border border-slate-200 shadow-lg text-center relative">
+          <SwiperSlide
+            key={testimonial.id}
+            className="w-[300px] swiper-slide-custom"
+          >
+            <div className="testimonial-box bg-white p-6 rounded-tl-2xl rounded-tr-2xl rounded-bl-[60px] rounded-br-[60px] border border-slate-200 shadow-lg text-center relative">
               {/* Absolute div */}
               <div className="absolute top-0 right-0 left-0 bottom-[160px] bg-lime-500 rounded-tl-2xl rounded-tr-2xl z-0"></div>
 

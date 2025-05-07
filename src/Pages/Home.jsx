@@ -4,11 +4,15 @@ import SubBoxContainer from "../Components/SubBoxContainer";
 import { useLoaderData } from "react-router";
 import TestimonialsSlider from "../Components/TestimonialsSlider";
 import NewsLetterComponent from "../Components/NewsLetterComponent";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   const subBoxData = useLoaderData();
   return (
     <div className="max-w-[1200px] mx-auto">
+      <Helmet>
+        <title>Subnestic || Home</title>
+      </Helmet>
       {/* Slider */}
       <div>
         <Slider></Slider>

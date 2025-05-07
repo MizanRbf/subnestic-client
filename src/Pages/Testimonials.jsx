@@ -2,13 +2,17 @@ import React from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import TestimonialsSlider from "../Components/TestimonialsSlider";
-import { useLoaderData } from "react-router";
+import { Helmet } from "react-helmet-async";
+// import { useLoaderData } from "react-router";
 
 const Testimonials = () => {
-  const testimonials = useLoaderData();
-  console.log(testimonials);
+  // const testimonials = useLoaderData();
+  // console.log(testimonials);
   return (
     <div>
+      <Helmet>
+        <title>Subnestic || Testimonials</title>
+      </Helmet>
       <header className="w-11/12 mx-auto">
         <Navbar></Navbar>
       </header>

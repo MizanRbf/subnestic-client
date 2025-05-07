@@ -3,6 +3,7 @@ import { useLoaderData, useParams } from "react-router";
 import Navbar from "../Components/Navbar";
 import BoxDetailsCard from "../Components/BoxDetailsCard";
 import Footer from "../Components/Footer";
+import { Helmet } from "react-helmet-async";
 
 const BoxDetails = () => {
   const { id } = useParams();
@@ -17,6 +18,9 @@ const BoxDetails = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Subnestic || BoxDetails</title>
+      </Helmet>
       <header>
         <Navbar></Navbar>
       </header>

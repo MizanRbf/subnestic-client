@@ -2,10 +2,14 @@ import React from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import NewsLetterComponent from "../Components/NewsLetterComponent";
+import { Helmet } from "react-helmet-async";
 
 const NewsLetter = () => {
   return (
     <div>
+      <Helmet>
+        <title>Subnestic || NewsLetter</title>
+      </Helmet>
       <header className="w-11/12 mx-auto">
         <Navbar></Navbar>
       </header>

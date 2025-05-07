@@ -4,6 +4,7 @@ import { AuthContext } from "../Provider/AuthContext";
 import Swal from "sweetalert2";
 import { FaEye } from "react-icons/fa";
 import { LuEyeClosed } from "react-icons/lu";
+import { Helmet } from "react-helmet-async";
 
 // Register Component
 const Register = () => {
@@ -79,6 +80,9 @@ const Register = () => {
   };
   return (
     <div className="card bg-base-100 w-full max-w-sm mx-auto mt-10 shrink-0 shadow-2xl">
+      <Helmet>
+        <title>Subnestic || Register</title>
+      </Helmet>
       <div className="card-body">
         <h2 className="text-center">Register your account</h2>
         <hr className="border-base-300 my-3" />

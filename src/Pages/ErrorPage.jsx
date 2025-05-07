@@ -1,9 +1,13 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router";
 
 const ErrorPage = () => {
   return (
     <div className="mt-30 md:mt-0 min-h-[calc(100vh-314px)] flex flex-col justify-center items-center">
+      <Helmet>
+        <title>Subnestic || Error</title>
+      </Helmet>
       <img
         className="w-[100px] md:w-[200px] mb-4"
         src="Assets/Error.png"

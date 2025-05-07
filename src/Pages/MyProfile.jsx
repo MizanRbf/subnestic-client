@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { AuthContext } from "../Provider/AuthContext";
+import { Helmet } from "react-helmet-async";
 
 const MyProfile = () => {
   const { updateUser, user, setUser } = useContext(AuthContext);
@@ -23,6 +24,9 @@ const MyProfile = () => {
 
   return (
     <div className="max-w-[1200px] mx-auto mt-10">
+      <Helmet>
+        <title>Subnestic || My_Profile</title>
+      </Helmet>
       {/* My Profile */}
       <div className="card bg-base-100 w-full max-w-sm mx-auto shrink-0 shadow-xl border-slate-100 border">
         <div className="card-body">

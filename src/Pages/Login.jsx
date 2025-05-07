@@ -2,6 +2,7 @@ import React, { useContext, useRef, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../Provider/AuthContext";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet-async";
 
 // Login Component
 const Login = () => {
@@ -59,6 +60,9 @@ const Login = () => {
 
   return (
     <div className="card bg-base-100 w-full max-w-sm mx-auto mt-20 shrink-0 shadow-2xl">
+      <Helmet>
+        <title>Subnestic || Login</title>
+      </Helmet>
       <div className="card-body">
         <h2 className="text-center">Login your account</h2>
         <hr className="border-base-300 my-3" />
