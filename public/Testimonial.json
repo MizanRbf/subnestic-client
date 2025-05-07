@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "name": "Ava Mitchell",
+    "photo": "https://randomuser.me/api/portraits/men/31.jpg",
+    "comment": "Absolutely love the subscription box! Every month is a surprise.",
+    "company": "Lush Living",
+    "location": "New York, USA"
+  },
+  {
+    "id": 2,
+    "name": "Ethan Carter",
+    "photo": "https://randomuser.me/api/portraits/men/2.jpg",
+    "comment": "Great quality and fast delivery. Highly recommended.",
+    "company": "Eco Essentials",
+    "location": "Toronto, Canada"
+  },
+  {
+    "id": 3,
+    "name": "Sofia Reyes",
+    "photo": "https://randomuser.me/api/portraits/men/32.jpg",
+    "comment": "Every item feels thoughtfully chosen. Worth every penny!",
+    "company": "Green Life Co.",
+    "location": "Barcelona, Spain"
+  },
+  {
+    "id": 4,
+    "name": "Liam Bennett",
+    "photo": "https://randomuser.me/api/portraits/men/4.jpg",
+    "comment": "The packaging is beautiful and the products are unique.",
+    "company": "BoxyCharm",
+    "location": "Melbourne, Australia"
+  },
+  {
+    "id": 5,
+    "name": "Chloe Wang",
+    "photo": "https://randomuser.me/api/portraits/men/33.jpg",
+    "comment": "Customer service is top-notch and so friendly!",
+    "company": "GlowPack",
+    "location": "Beijing, China"
+  },
+  {
+    "id": 6,
+    "name": "Noah Kim",
+    "photo": "https://randomuser.me/api/portraits/men/6.jpg",
+    "comment": "Been subscribed for 6 months now and never disappointed.",
+    "company": "TrendBox",
+    "location": "Seoul, South Korea"
+  },
+  {
+    "id": 7,
+    "name": "Emma Dubois",
+    "photo": "https://randomuser.me/api/portraits/men/34.jpg",
+    "comment": "Perfect as a gift too. My sister loved it!",
+    "company": "NatureNest",
+    "location": "Paris, France"
+  },
+  {
+    "id": 8,
+    "name": "Jackson Lee",
+    "photo": "https://randomuser.me/api/portraits/men/8.jpg",
+    "comment": "Affordable and exciting. I look forward to it monthly.",
+    "company": "ZenCrate",
+    "location": "Singapore"
+  },
+  {
+    "id": 9,
+    "name": "Isla Johansson",
+    "photo": "https://randomuser.me/api/portraits/men/35.jpg",
+    "comment": "Gorgeous curation. A real treat every time!",
+    "company": "BlissBox",
+    "location": "Stockholm, Sweden"
+  },
+  {
+    "id": 10,
+    "name": "James Patel",
+    "photo": "https://randomuser.me/api/portraits/men/10.jpg",
+    "comment": "Everything is so thoughtfully packed. Great experience!",
+    "company": "CrateJoy",
+    "location": "Delhi, India"
+  },
+  {
+    "id": 11,
+    "name": "Luna Fernandez",
+    "photo": "https://randomuser.me/api/portraits/men/36.jpg",
+    "comment": "Always new and exciting products each month!",
+    "company": "GlowGems",
+    "location": "Mexico City, Mexico"
+  },
+  {
+    "id": 12,
+    "name": "Benjamin Green",
+    "photo": "https://randomuser.me/api/portraits/men/12.jpg",
+    "comment": "Nice mix of essentials and surprises!",
+    "company": "CarePack",
+    "location": "London, UK"
+  },
+  {
+    "id": 13,
+    "name": "Mila Schmidt",
+    "photo": "https://randomuser.me/api/portraits/men/37.jpg",
+    "comment": "My go-to gift idea now. So fun and easy.",
+    "company": "SurpriseBox",
+    "location": "Berlin, Germany"
+  },
+  {
+    "id": 14,
+    "name": "Elijah Garcia",
+    "photo": "https://randomuser.me/api/portraits/men/14.jpg",
+    "comment": "Boxes come right on time. I love it!",
+    "company": "BoxBloom",
+    "location": "San Francisco, USA"
+  },
+  {
+    "id": 15,
+    "name": "Aria Rossi",
+    "photo": "https://randomuser.me/api/portraits/men/38.jpg",
+    "comment": "The surprise factor makes it exciting every time.",
+    "company": "VibeCrate",
+    "location": "Rome, Italy"
+  },
+  {
+    "id": 16,
+    "name": "Leo Tanaka",
+    "photo": "https://randomuser.me/api/portraits/men/16.jpg",
+    "comment": "Very creative and thoughtfully designed boxes.",
+    "company": "MindfulBox",
+    "location": "Tokyo, Japan"
+  },
+  {
+    "id": 17,
+    "name": "Zara Ahmed",
+    "photo": "https://randomuser.me/api/portraits/men/39.jpg",
+    "comment": "Totally worth the money every single time.",
+    "company": "Crateful Joy",
+    "location": "Dubai, UAE"
+  },
+  {
+    "id": 18,
+    "name": "Mateo Costa",
+    "photo": "https://randomuser.me/api/portraits/men/18.jpg",
+    "comment": "So unique and fun I am hooked!",
+    "company": "JoyCraft",
+    "location": "Lisbon, Portugal"
+  },
+  {
+    "id": 19,
+    "name": "Ella Novak",
+    "photo": "https://randomuser.me/api/portraits/men/40.jpg",
+    "comment": "My kids get so excited when the box arrives!",
+    "company": "TinyTreasure",
+    "location": "Prague, Czech Republic"
+  },
+  {
+    "id": 20,
+    "name": "Gabriel Müller",
+    "photo": "https://randomuser.me/api/portraits/men/20.jpg",
+    "comment": "Love the eco-friendly options in each box.",
+    "company": "EcoBoxy",
+    "location": "Vienna, Austria"
+  },
+  {
+    "id": 21,
+    "name": "Hana Yusuf",
+    "photo": "https://randomuser.me/api/portraits/men/41.jpg",
+    "comment": "High quality and fun the perfect combo.",
+    "company": "BeautyBurst",
+    "location": "Kuala Lumpur, Malaysia"
+  },
+  {
+    "id": 22,
+    "name": "Oliver Smith",
+    "photo": "https://randomuser.me/api/portraits/men/22.jpg",
+    "comment": "I love unboxing day feels like my birthday!",
+    "company": "Boxology",
+    "location": "Dublin, Ireland"
+  },
+  {
+    "id": 23,
+    "name": "Layla Ali",
+    "photo": "https://randomuser.me/api/portraits/men/42.jpg",
+    "comment": "Perfect mix of products and surprise treats.",
+    "company": "TreatCrate",
+    "location": "Cairo, Egypt"
+  },
+  {
+    "id": 24,
+    "name": "Oscar Wilson",
+    "photo": "https://randomuser.me/api/portraits/men/24.jpg",
+    "comment": "Always a hit in our family. Great value!",
+    "company": "SurpriseHub",
+    "location": "Cape Town, South Africa"
+  },
+  {
+    "id": 25,
+    "name": "Freya Jensen",
+    "photo": "https://randomuser.me/api/portraits/men/43.jpg",
+    "comment": "Just the right mix of fun and useful items.",
+    "company": "HappyBox",
+    "location": "Copenhagen, Denmark"
+  },
+  {
+    "id": 26,
+    "name": "Lucas Moretti",
+    "photo": "https://randomuser.me/api/portraits/men/26.jpg",
+    "comment": "Feels like a personal gift each month!",
+    "company": "JoyDrop",
+    "location": "São Paulo, Brazil"
+  },
+  {
+    "id": 27,
+    "name": "Maya Kapoor",
+    "photo": "https://randomuser.me/api/portraits/men/44.jpg",
+    "comment": "Loved the skincare products in last months box!",
+    "company": "GlowNow",
+    "location": "Mumbai, India"
+  },
+  {
+    "id": 28,
+    "name": "Henry Davies",
+    "photo": "https://randomuser.me/api/portraits/men/28.jpg",
+    "comment": "A new favorite every time keep it up!",
+    "company": "PackPal",
+    "location": "Manchester, UK"
+  },
+  {
+    "id": 29,
+    "name": "Sienna Connor",
+    "photo": "https://randomuser.me/api/portraits/men/45.jpg",
+    "comment": "Cute packaging, great contents. I'm a fan.",
+    "company": "BreezyBox",
+    "location": "Auckland, New Zealand"
+  },
+  {
+    "id": 30,
+    "name": "William Lee",
+    "photo": "https://randomuser.me/api/portraits/men/30.jpg",
+    "comment": "Impressive variety and presentation. Love it!",
+    "company": "DelightDrop",
+    "location": "Los Angeles, USA"
+  }
+]

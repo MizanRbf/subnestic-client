@@ -2,8 +2,11 @@ import React from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import TestimonialsSlider from "../Components/TestimonialsSlider";
+import { useLoaderData } from "react-router";
 
 const Testimonials = () => {
+  const testimonials = useLoaderData();
+  console.log(testimonials);
   return (
     <div>
       <header className="w-11/12 mx-auto">

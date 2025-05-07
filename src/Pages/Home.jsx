@@ -24,13 +24,13 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Extra-1 */}
+      {/* Customer Testimonials */}
       <div className="mt-20">
         <h2 className="mb-4 text-primary">Customer Testimonials</h2>
         <TestimonialsSlider></TestimonialsSlider>
       </div>
 
-      {/* Extra-2 */}
+      {/* News Letter */}
       <div className="mt-30 mb-20">
         <h2 className="mb-4 text-primary">Get Surprises in Your Inbox!</h2>
         <NewsLetterComponent></NewsLetterComponent>

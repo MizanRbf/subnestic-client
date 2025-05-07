@@ -9,7 +9,7 @@ const NewsLetter = () => {
       <header className="w-11/12 mx-auto">
         <Navbar></Navbar>
       </header>
-      <main className="w-11/12 mx-auto min-h-[calc(100vh-460px)] mt-10 md:mt-40">
+      <main className="w-11/12 mx-auto md:min-h-[calc(100vh-460px)] mt-10 md:mt-40">
         <h2 className="mb-4">Get Surprises in Your Inbox!</h2>
         <NewsLetterComponent></NewsLetterComponent>
       </main>
