@@ -68,7 +68,7 @@ const Navbar = () => {
 
       {/* Menubar for Large Device */}
       <div className="navbar-center hidden md:flex">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="space-x-6 *:hover:text-primary *:hover:underline menu-horizontal px-1">
           <li>
             <NavLink to="/">Home</NavLink>
           </li>

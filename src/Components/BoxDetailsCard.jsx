@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router";
+import Reviews from "./Reviews";
 
 const BoxDetailsCard = ({ subBox }) => {
+  const [reviews, setReviews] = useState([]);
   const {
     name,
     thumbnail,
@@ -14,9 +16,16 @@ const BoxDetailsCard = ({ subBox }) => {
     ratings,
     description,
   } = subBox;
-
+  // Handle Reviews
+  const handleReviews = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const text = e.target.review.value;
+    setReviews([...reviews, text]);
+    form.reset();
+  };
   return (
-    <div className="min-h-[calc(100vh-288px)] flex justify-center items-center">
+    <div className="min-h-[calc(100vh-288px)] max-w-[1200px] mx-auto md:px-10 lg:px-0 mt-10">
       <div className="border border-slate-100 rounded-lg p-6 space-y-1 shadow-sm flex flex-col md:flex-row items-center justify-center gap-10">
         {/* Image */}
         <div>
@@ -70,23 +79,61 @@ const BoxDetailsCard = ({ subBox }) => {
             </div>
           </div>
 
-          {/* Ratings */}
-          <p>
-            <span className="font-semibold">Ratings: </span>
-            {ratings}
-          </p>
-
           {/* Reviews */}
-          <p>
-            <span className="font-semibold">Reviews: </span>
-            {number_of_reviews}
-          </p>
+          <div className="rating rating-xl">
+            <input
+              type="radio"
+              name="rating-9"
+              className="mask mask-star-2 bg-orange-400"
+              aria-label="1 star"
+            />
+            <input
+              type="radio"
+              name="rating-9"
+              className="mask mask-star-2 bg-orange-400"
+              aria-label="2 star"
+              defaultChecked
+            />
+            <input
+              type="radio"
+              name="rating-9"
+              className="mask mask-star-2 bg-orange-400"
+              aria-label="3 star"
+            />
+            <input
+              type="radio"
+              name="rating-9"
+              className="mask mask-star-2 bg-orange-400"
+              aria-label="4 star"
+            />
+            <input
+              type="radio"
+              name="rating-9"
+              className="mask mask-star-2 bg-orange-400"
+              aria-label="5 star"
+            />
+          </div>
+          <br />
+          <form onSubmit={handleReviews}>
+            <input
+              type="text"
+              name="review"
+              placeholder="Text here..."
+              className="border border-slate-300 w-full py-3 rounded-sm pl-2"
+            />
+            <button type="submit" className="min-w-full mt-2">
+              Submit Review
+            </button>
+          </form>
 
           {/* Button */}
           <Link to="/">
-            <button className="min-w-full mt-4">Return</button>
+            <button className="min-w-full">Return Home</button>
           </Link>
         </div>
+      </div>
+      <div className="mt-4 min-h-[200px] border mb-10 border-slate-200 shadow rounded-lg px-6 py-2">
+        <Reviews reviews={reviews}></Reviews>
       </div>
     </div>
   );
