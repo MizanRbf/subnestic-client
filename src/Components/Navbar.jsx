@@ -50,16 +50,19 @@ const Navbar = () => {
             className="menu menu-md dropdown-content bg-primary text-white rounded-lg z-1 mt-3 w-52 p-2 shadow *:hover:text-black *:hover:bg-white *:rounded-sm *:duration-300"
           >
             <li>
-              <NavLink to="/">Home</NavLink>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <NavLink to="/testimonials">Testimonials</NavLink>
+              <Link to="/testimonials">Testimonials</Link>
             </li>
             <li>
-              <NavLink to="/newsLetter">NewsLetter</NavLink>
+              <Link to="/newsLetter">NewsLetter</Link>
             </li>
             <li>
-              <NavLink to="myProfile">My Profile</NavLink>
+              <Link to="/myProfile">My Profile</Link>
+            </li>
+            <li>
+              <Link to="/orderHistory">Order History</Link>
             </li>
           </ul>
         </div>
@@ -80,6 +83,9 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink to="/myProfile">My Profile</NavLink>
+          </li>
+          <li>
+            <NavLink to="/orderHistory">Order History</NavLink>
           </li>
         </ul>
       </div>

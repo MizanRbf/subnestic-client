@@ -1,16 +1,25 @@
 import React from "react";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 
 const Footer = () => {
   return (
     <footer className="footer footer-horizontal footer-center bg-primary text-white p-10">
       <nav className="grid grid-flow-col gap-4">
-        <NavLink to="/" className="link link-hover">
+        <Link to="/" className="link link-hover">
           Home
-        </NavLink>
-        <NavLink to="/myProfile" className="link link-hover">
+        </Link>
+        <Link to="/testimonials" className="link link-hover">
+          Testimonials
+        </Link>
+        <Link to="/newsLetter" className="link link-hover">
+          NewsLetter
+        </Link>
+        <Link to="/myProfile" className="link link-hover">
           My Profile
-        </NavLink>
+        </Link>
+        <Link to="/orderHistory" className="link link-hover">
+          Order History
+        </Link>
       </nav>
       <nav>
         <div className="grid grid-flow-col gap-4">

@@ -1,9 +1,55 @@
-import React, { useState } from "react";
-import { Link } from "react-router";
+import { useState } from "react";
+import { Link, useLoaderData, useNavigate, useParams } from "react-router";
+import { toast } from "react-toastify";
 import Reviews from "./Reviews";
+import { addToStored } from "../LocalStorage/Storage";
+const BoxDetails = () => {
+  const navigate = useNavigate();
+  const { id } = useParams();
 
-const BoxDetailsCard = ({ subBox }) => {
+  // Handle Reviews
   const [reviews, setReviews] = useState([]);
+  const handleReviews = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const text = e.target.review.value;
+    setReviews([...reviews, text]);
+    form.reset();
+  };
+
+  // Id validity function
+  const isNumberOnly = (value) => {
+    return !isNaN(value) && Number.isInteger(Number(value));
+  };
+
+  // Validity check
+
+  const isValidString = isNumberOnly(id);
+  const Id = isValidString ? parseInt(id) : null;
+
+  const boxes = useLoaderData();
+  const singleBox = boxes.find((box) => box.id === Id);
+
+  const isValidData =
+    singleBox && isValidString && typeof singleBox.id === "number";
+
+  if (!isValidData) {
+    return (
+      <div className="text-center">
+        <h1 className="text-xl md:text-4xl text-red-600 mt-50 mb-8">
+          Invalid id! You should provide valid id.
+        </h1>
+        <Link
+          className="bg-green-600 text-white px-8 py-2 font-semibold rounded-md"
+          to="/"
+        >
+          Go Back Home
+        </Link>
+      </div>
+    );
+  }
+
+  // Destructure
   const {
     name,
     thumbnail,
@@ -12,18 +58,19 @@ const BoxDetailsCard = ({ subBox }) => {
     price,
     features,
     subscription_benefits,
-    number_of_reviews,
-    ratings,
     description,
-  } = subBox;
-  // Handle Reviews
-  const handleReviews = (e) => {
-    e.preventDefault();
-    const form = e.target;
-    const text = e.target.review.value;
-    setReviews([...reviews, text]);
-    form.reset();
+  } = singleBox;
+
+  const handleOrderHistory = (boxId) => {
+    const added = addToStored(boxId);
+    if (!added) {
+      toast.error("Already Subscribed!");
+    } else {
+      toast.success("Subscribed Successfully");
+      navigate("/orderHistory");
+    }
   };
+
   return (
     <div className="min-h-[calc(100vh-288px)] max-w-[1200px] mx-auto md:px-10 lg:px-0 mt-10">
       <div className="border border-slate-100 rounded-lg p-6 space-y-1 shadow-sm flex flex-col md:flex-row items-center justify-center gap-10">
@@ -126,17 +173,28 @@ const BoxDetailsCard = ({ subBox }) => {
             </button>
           </form>
 
-          {/* Button */}
+          {/* Subscribe Button */}
+          <button
+            onClick={() => {
+              handleOrderHistory(id);
+            }}
+            className="min-w-full"
+          >
+            Subscribe Now
+          </button>
+
+          {/* Return Home */}
           <Link to="/">
             <button className="min-w-full">Return Home</button>
           </Link>
         </div>
       </div>
+
+      {/* Reviews field */}
       <div className="mt-4 min-h-[200px] border mb-10 border-slate-200 shadow rounded-lg px-6 py-2">
         <Reviews reviews={reviews}></Reviews>
       </div>
     </div>
   );
 };
-
-export default BoxDetailsCard;
+export default BoxDetails;

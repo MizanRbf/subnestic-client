@@ -6,11 +6,12 @@ import AuthLayout from "../Layouts/AuthLayout";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
 import MyProfile from "../Pages/MyProfile";
-import BoxDetails from "../Pages/BoxDetails";
 import PrivateRoute from "../Provider/PrivateRoute";
 import Loader from "../Components/Loader";
 import Testimonials from "../Pages/Testimonials";
 import NewsLetter from "../Pages/NewsLetter";
+import OrderHistory from "../Pages/OrderHistory";
+import BoxDetails from "../Components/BoxDetails";
 
 export const router = createBrowserRouter([
   {
@@ -59,7 +60,7 @@ export const router = createBrowserRouter([
   },
   {
     path: "/testimonials",
-    loader: () => fetch("/TestimonialsData.json"),
+    // loader: () => fetch("/TestimonialsData.json"),
     element: <Testimonials></Testimonials>,
   },
   {
@@ -69,5 +70,15 @@ export const router = createBrowserRouter([
   {
     path: "/*",
     element: <ErrorPage></ErrorPage>,
+  },
+  {
+    path: "/orderHistory",
+    loader: () => fetch("/subscription_box.json"),
+    hydrateFallbackElement: <Loader></Loader>,
+    element: (
+      <PrivateRoute>
+        <OrderHistory></OrderHistory>
+      </PrivateRoute>
+    ),
   },
 ]);

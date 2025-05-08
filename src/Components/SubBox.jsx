@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router";
 
-const SubBoxContainer = ({ subBox }) => {
+const SubBox = ({ subBox }) => {
   const { id, thumbnail, name, category, price, frequency } = subBox;
+
   return (
-    <div className="border border-slate-100 rounded-lg p-6 space-y-1 shadow-xl">
+    <div>
       <img
         className="w-full h-[300px] rounded-lg mb-4"
         src={thumbnail}
@@ -21,4 +22,4 @@ const SubBoxContainer = ({ subBox }) => {
   );
 };
 
-export default SubBoxContainer;
+export default SubBox;

@@ -18,6 +18,9 @@
 button{
   @apply btn bg-primary text-white hover:bg-lime-600
 }
+.unsubscribe{
+ @apply text-xs md:text-sm bg-red-50 font-semibold rounded-4xl text-red-500 py-1 md:py-2 border-red-500 hover:bg-red-100 block text-center
+}
 /* p{
 @apply text-sm text-slate-800
 } */
@@ -77,4 +80,7 @@ height: 300px;
 }
 .active{
   @apply text-primary  underline
+}
+.review-submit{
+  @apply rounded-tr-4xl rounded-br-4xl rounded-tl-none rounded-bl-none py-6
 }
