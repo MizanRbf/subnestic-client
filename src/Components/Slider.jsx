@@ -31,35 +31,35 @@ export default function Slider() {
       >
         <SwiperSlide>
           <img
-            className="w-full h-[400px]"
+            className="w-full h-[400px] rounded-xl"
             src="https://i.ibb.co.com/QWP85hX/Truly-subscription-box-banner-3.webp"
             alt=""
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            className="w-full h-[400px]"
+            className="w-full h-[400px] rounded-xl"
             src="https://i.ibb.co.com/gLrNTtpS/Voice-Commerce-2.png"
             alt=""
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            className="w-full h-[400px]"
-            src="https://i.ibb.co.com/JR0xKB3x/TB-homepage.webp"
+            className="w-full h-[400px] rounded-xl"
+            src="https://i.ibb.co.com/YFhMnBC7/vegan-subscription-boxes-banner.jpg"
             alt=""
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            className="w-full h-[400px]"
+            className="w-full h-[400px] rounded-xl"
             src="https://i.ibb.co.com/W4fxbhqv/Packaging-Boxes-WEB-Banner-USA.webp"
             alt=""
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            className="w-full h-[400px]"
+            className="w-full h-[400px] rounded-xl"
             src="https://i.ibb.co.com/SD185mNb/Subscription-Boxes-Blog-r1v2.png"
             alt=""
           />

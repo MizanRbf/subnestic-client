@@ -130,5 +130,138 @@
     ],
     "ratings": 4.7,
     "number_of_reviews": 219
-  }
-]
+  },
+    {
+      "id": 7,
+      "name": "Tech Trend Box",
+      "category": "Gadgets & Technology",
+      "thumbnail": "https://i.ibb.co.com/7xMLXVsq/download.jpg",
+      "banner": "https://example.com/images/tech-box-banner.jpg",
+      "frequency": "Monthly",
+      "price": 49.99,
+      "description": "Stay ahead with trending tech gadgets, accessories, and innovative tools each month.",
+      "features": [
+        "Latest Tech Accessories",
+        "Gadget Reviews",
+        "Bonus App Recommendations"
+      ],
+      "subscription_benefits": [
+        "Early Gadget Trials",
+        "Monthly Tech Magazine",
+        "Member-Only Discounts"
+      ],
+      "ratings": 4.4,
+      "number_of_reviews": 301
+    },
+    {
+      "id": 8,
+      "name": "Coffee Lovers Crate",
+      "category": "Food & Beverage",
+      "thumbnail": "https://i.ibb.co.com/GvmgdMWx/download.jpg",
+      "banner": "https://example.com/images/coffee-box-banner.jpg",
+      "frequency": "Monthly",
+      "price": 32.50,
+      "description": "Premium coffee beans, brewing tools, and barista tips for enthusiasts & pros.",
+      "features": [
+        "2 Packs of Premium Beans",
+        "Barista Tips Booklet",
+        "Brewing Accessories"
+      ],
+      "subscription_benefits": [
+        "Virtual Brewing Classes",
+        "Early Bean Access",
+        "Coffee Connoisseur Badge"
+      ],
+      "ratings": 4.9,
+      "number_of_reviews": 410
+    },
+    {
+      "id": 9,
+      "name": "Eco Essentials Box",
+      "category": "Sustainability",
+      "thumbnail": "https://i.ibb.co.com/Pz6KCjdv/images.jpg",
+      "banner": "https://example.com/images/eco-box-banner.jpg",
+      "frequency": "Monthly",
+      "price": 26.00,
+      "description": "Eco-friendly lifestyle items that help reduce waste and promote green living.",
+      "features": [
+        "Zero-Waste Products",
+        "Reusable Alternatives",
+        "Sustainable Living Guide"
+      ],
+      "subscription_benefits": [
+        "Carbon Offset Support",
+        "Green Points Reward",
+        "Tree Planted per Box"
+      ],
+      "ratings": 4.6,
+      "number_of_reviews": 212
+    },
+    {
+      "id": 10,
+      "name": "Fitness Fuel Crate",
+      "category": "Fitness & Nutrition",
+      "thumbnail": "https://i.ibb.co.com/HTzPzdgj/91p-Sl-Ja-AIk-L-AC-UF1000-1000-QL80.jpg",
+      "banner": "https://example.com/images/fitness-box-banner.jpg",
+      "frequency": "Monthly",
+      "price": 37.99,
+      "description": "Power your workouts with healthy snacks, gear, and exclusive fitness content.",
+      "features": [
+        "Protein Snacks",
+        "Resistance Bands",
+        "Workout Routine Cards"
+      ],
+      "subscription_benefits": [
+        "Access to Training Videos",
+        "Meal Plan PDFs",
+        "Coach Q&A Sessions"
+      ],
+      "ratings": 4.8,
+      "number_of_reviews": 367
+    },
+    {
+      "id": 11,
+      "name": "Gamer's Loot Crate",
+      "category": "Gaming",
+      "thumbnail": "https://i.ibb.co.com/wNQGxK5H/download.jpg",
+      "banner": "https://example.com/images/gaming-box-banner.jpg",
+      "frequency": "Monthly",
+      "price": 35.00,
+      "description": "Exclusive collectibles, gear, and digital content for every kind of gamer.",
+      "features": [
+        "Game-Themed Apparel",
+        "Collectibles & Pins",
+        "Game Codes & Trials"
+      ],
+      "subscription_benefits": [
+        "Early Access to Betas",
+        "Giveaway Entries",
+        "Exclusive Game Updates"
+      ],
+      "ratings": 4.7,
+      "number_of_reviews": 442
+    },
+    {
+      "id": 12,
+      "name": "Kiddo Discovery Box",
+      "category": "Children & Education",
+      "thumbnail": "https://i.ibb.co.com/Q1c9Hgq/stemdiscoveryboxes.webp",
+      "banner": "https://example.com/images/kids-box-banner.jpg",
+      "frequency": "Monthly",
+      "price": 29.00,
+      "description": "Fun and educational activities for kids aged 5–10 with science, art, and puzzles.",
+      "features": [
+        "STEM Projects",
+        "Storybook & Activity Book",
+        "Creative Art Supplies"
+      ],
+      "subscription_benefits": [
+        "Parent Guide PDF",
+        "Access to Learning Videos",
+        "Monthly Challenge Certificate"
+      ],
+      "ratings": 4.9,
+      "number_of_reviews": 389
+    }
+  ]
+  
