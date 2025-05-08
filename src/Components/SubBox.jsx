@@ -5,7 +5,7 @@ const SubBox = ({ subBox }) => {
   const { id, thumbnail, name, category, price, frequency } = subBox;
 
   return (
-    <div>
+    <div className="border border-slate-200 rounded-lg p-6 space-y-1 shadow-lg">
       <img
         className="w-full h-[300px] rounded-lg mb-4"
         src={thumbnail}
