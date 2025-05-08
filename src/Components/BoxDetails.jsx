@@ -5,6 +5,7 @@ import { addToStored } from "../LocalStorage/Storage";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { toast, ToastContainer } from "react-toastify";
+import { AuthContext } from "../Provider/AuthContext";
 const BoxDetails = () => {
   const navigate = useNavigate();
   const { id } = useParams();
@@ -105,7 +106,7 @@ const BoxDetails = () => {
 
               {/* Price */}
               <p>
-                <span className="font-semibold">Price: </span> {price}
+                <span className="font-semibold">Price: </span> ${price}
               </p>
 
               {/* Frequency */}
@@ -117,7 +118,7 @@ const BoxDetails = () => {
               {/* Features */}
               <div>
                 <span className="font-semibold">Features:</span>
-                <div className="flex gap-2 *:border *:rounded-xs *:px-3 *:py-1 ">
+                <div className="flex gap-2 *:rounded-2xl *:bg-purple-50 *:text-purple-500 *:px-3 *:py-1 *:text-xs mt-2">
                   {features?.map((feature) => (
                     <p>{feature}</p>
                   ))}
@@ -127,7 +128,7 @@ const BoxDetails = () => {
               {/* Subscription_Benefits */}
               <div>
                 <span className="font-semibold">Subscription_Benefits:</span>
-                <div className="flex gap-2 *:border *:rounded-xs *:px-3 *:py-1 ">
+                <div className="flex gap-2 mt-2 *:rounded-4xl *:px-6 *:py-1 *:bg-lime-50 *:text-primary *:text-xs">
                   {subscription_benefits?.map((benefit) => (
                     <p>{benefit}</p>
                   ))}
@@ -135,7 +136,7 @@ const BoxDetails = () => {
               </div>
 
               {/* Reviews */}
-              <div className="rating rating-xl">
+              <div className="rating rating-sm mt-2">
                 <input
                   type="radio"
                   name="rating-9"
@@ -169,7 +170,7 @@ const BoxDetails = () => {
                 />
               </div>
               <br />
-              <form onSubmit={handleReviews} className="flex">
+              <form onSubmit={handleReviews} className="flex mt-2">
                 <input
                   type="text"
                   name="review"

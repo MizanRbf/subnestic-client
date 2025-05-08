@@ -1,7 +1,7 @@
 // import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FaQuoteLeft } from "react-icons/fa";
+import { FaQuoteLeft, FaStar } from "react-icons/fa";
 
 // Import Swiper styles
 import "swiper/css";
@@ -55,7 +55,7 @@ export default function TestimonialsSlider() {
           >
             <div className="testimonial-box bg-white p-6 rounded-tl-2xl rounded-tr-2xl rounded-bl-[60px] rounded-br-[60px] border border-slate-200 shadow-lg text-center relative">
               {/* Absolute div */}
-              <div className="absolute top-0 right-0 left-0 bottom-[160px] bg-lime-500 rounded-tl-2xl rounded-tr-2xl z-0"></div>
+              <div className="absolute top-0 right-0 left-0 bottom-[190px] bg-lime-500 rounded-tl-2xl rounded-tr-2xl z-0"></div>
 
               {/* Image */}
               <div className="flex justify-center">
@@ -70,6 +70,14 @@ export default function TestimonialsSlider() {
 
               <p className="font-semibold text-sm mt-2">{testimonial.name}</p>
               <p className="text-[8px] mb-4">Company: {testimonial.company}</p>
+
+              <div className="flex text-amber-500 justify-center mb-2">
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                <FaStar />
+              </div>
 
               <div className="flex justify-center">
                 <FaQuoteLeft />
