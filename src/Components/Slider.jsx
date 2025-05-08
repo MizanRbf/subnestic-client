@@ -32,35 +32,35 @@ export default function Slider() {
         <SwiperSlide>
           <img
             className="w-full h-[400px]"
-            src="https://i.ibb.co.com/Lz23Wh0Y/smart-home-interface-with-augmented-realty-iot-object-interior-design-756748-3188.jpg"
+            src="https://i.ibb.co.com/QWP85hX/Truly-subscription-box-banner-3.webp"
             alt=""
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
             className="w-full h-[400px]"
-            src="https://i.ibb.co.com/v4K51Gvw/kitchen-counter-with-remote-control-it-intelligent-home-automation-system-adjusts-lighting-temperatu.jpg"
+            src="https://i.ibb.co.com/gLrNTtpS/Voice-Commerce-2.png"
             alt=""
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
             className="w-full h-[400px]"
-            src="https://i.ibb.co.com/qLJjS8qq/Figure2-Smart-Home.webp"
+            src="https://i.ibb.co.com/JR0xKB3x/TB-homepage.webp"
             alt=""
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
             className="w-full h-[400px]"
-            src="https://i.ibb.co.com/vv4k3zr1/images.jpg"
+            src="https://i.ibb.co.com/W4fxbhqv/Packaging-Boxes-WEB-Banner-USA.webp"
             alt=""
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
             className="w-full h-[400px]"
-            src="https://i.ibb.co.com/GfYHnzr5/smart-home-interface-with-augmented-realty-iot-object-interior-design-756748-3157.jpg"
+            src="https://i.ibb.co.com/SD185mNb/Subscription-Boxes-Blog-r1v2.png"
             alt=""
           />
         </SwiperSlide>
