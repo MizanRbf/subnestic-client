@@ -3,9 +3,9 @@ import { Link } from "react-router";
 
 const NewsLetterComponent = () => {
   return (
-    <div className="mb-10  border rounded-lg border-slate-200 shadow-lg p-6 gap-4 ">
+    <div className="mb-10  border rounded-lg border-slate-200 shadow-lg p-6 gap-4">
       <h2 className="mb-10 text-center">📬Subscribe to Our Newsletter</h2>
-      <div className="flex flex-col md:flex-row">
+      <div className="flex flex-col gap-10 md:flex-row">
         <div className="w-full space-y-2 items-center justify-center">
           <p>
             Be the first to experience the best of our subscription

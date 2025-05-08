@@ -7,10 +7,10 @@ import { Link, NavLink } from "react-router";
 const Footer = () => {
   return (
     <footer className=" bg-lime-950 text-white p-10">
-      <div className="flex justify-between mb-10 max-w-[1200px] mx-auto">
+      <div className="flex flex-col lg:flex-row *:mb-8 justify-between mb-10 max-w-[1200px] mx-auto">
         {/* Title & Description */}
         <nav className="items-start *:space-y-2">
-          <h2 className="text-left mb-6">Subnestic</h2>
+          <img className="w-60 mb-5" src="/assets/logo2.png" alt="" />
           {/* Contact Us */}
           <nav className="*:text-left *:text-xs *:md:text-sm">
             <p className="flex items-start gap-2">
@@ -28,7 +28,7 @@ const Footer = () => {
             </p>
           </nav>
         </nav>
-        {/* Page Routes */}
+        {/* Quick Links */}
         <nav className="flex flex-col *:text-sm space-y-2 text-left">
           <h4 className="underline">Quick Links</h4>
           <Link to="/" className="link link-hover">
@@ -69,8 +69,8 @@ const Footer = () => {
         </nav>
 
         {/* Social Icon */}
-        <nav className="flex flex-col justify-end gap-3">
-          <ul className="flex text-xl md:text-2xl w-full justify-start space-x-4">
+        <nav className="flex flex-col justify-end gap-6">
+          <ul className="flex text-3xl md:text-2xl w-full justify-start space-x-4">
             <li>
               <a
                 className="hover:text-primary"
@@ -107,7 +107,7 @@ const Footer = () => {
           </form>
         </nav>
       </div>
-      <div className="text-xs md:text-sm">
+      <div className="text-xs md:text-sm text-center">
         <p>
           Copyright © {new Date().getFullYear()} - All right reserved by
           Subnestic .com

@@ -17,7 +17,16 @@ const Testimonials = () => {
         <Navbar></Navbar>
       </header>
       <main className="w-11/12 mx-auto min-h-[calc(100vh-425px)] mt-30">
-        <h2 className="mb-6">Customer Testimonials</h2>
+        <div className="text-center mb-6">
+          <h1 className="mb-3 text-center text-primary">
+            Customer Testimonials
+          </h1>
+          <p className="text-sm">
+            Our customers love what we do! Their feedback reflects the quality,
+            care, and commitment we bring to every service. Read their stories
+            and see why they trust us.
+          </p>
+        </div>
         <TestimonialsSlider></TestimonialsSlider>
       </main>
       <footer>

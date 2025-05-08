@@ -26,7 +26,7 @@ const Navbar = () => {
       )}
       <div className="navbar-start">
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+          <div tabIndex={0} role="button" className="lg:hidden mr-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -66,7 +66,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <h2 className="text-primary">Subnestic</h2>
+        <img className="w-50" src="/assets/logo.png" alt="" />
       </div>
 
       {/* Menubar for Large Device */}
