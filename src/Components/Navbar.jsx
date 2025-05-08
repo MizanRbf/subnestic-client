@@ -26,7 +26,7 @@ const Navbar = () => {
       )}
       <div className="navbar-start">
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost md:hidden">
+          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -70,7 +70,7 @@ const Navbar = () => {
       </div>
 
       {/* Menubar for Large Device */}
-      <div className="navbar-center hidden md:flex">
+      <div className="navbar-center hidden lg:flex">
         <ul className="space-x-6 *:hover:text-primary *:hover:underline menu-horizontal px-1">
           <li>
             <NavLink to="/">Home</NavLink>
@@ -101,7 +101,7 @@ const Navbar = () => {
               alt="User"
             />
 
-            <div className="absolute bottom-[10px] md:-bottom-[10px] lg:bottom-[10px] text-primary -left-[60px] -translate-x-1/2 text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-10">
+            <div className="absolute bottom-[10px] lg:bottom-[10px] text-primary -left-[60px] -translate-x-1/2 text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-10">
               {user.displayName || "User"}
             </div>
           </div>

@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Link, useLoaderData, useNavigate, useParams } from "react-router";
-import { toast } from "react-toastify";
 import Reviews from "./Reviews";
 import { addToStored } from "../LocalStorage/Storage";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import { toast, ToastContainer } from "react-toastify";
 const BoxDetails = () => {
   const navigate = useNavigate();
   const { id } = useParams();
@@ -75,6 +75,7 @@ const BoxDetails = () => {
 
   return (
     <>
+      <ToastContainer></ToastContainer>
       <div className="min-h-[calc(100vh-288px)] max-w-[1200px] mx-auto md:px-10 lg:px-0">
         <header>
           <Navbar></Navbar>
@@ -181,6 +182,7 @@ const BoxDetails = () => {
               </form>
 
               {/* Subscribe Button */}
+
               <button
                 onClick={() => {
                   handleOrderHistory(id);

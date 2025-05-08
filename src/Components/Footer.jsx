@@ -1,69 +1,118 @@
 import React from "react";
+import { FaFacebook, FaLinkedin, FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
+import { FaLocationDot, FaXTwitter } from "react-icons/fa6";
+import { IoMail } from "react-icons/io5";
 import { Link, NavLink } from "react-router";
 
 const Footer = () => {
   return (
-    <footer className="footer footer-horizontal footer-center bg-primary text-white p-10">
-      <nav className="grid grid-flow-col gap-4">
-        <Link to="/" className="link link-hover">
-          Home
-        </Link>
-        <Link to="/testimonials" className="link link-hover">
-          Testimonials
-        </Link>
-        <Link to="/newsLetter" className="link link-hover">
-          NewsLetter
-        </Link>
-        <Link to="/myProfile" className="link link-hover">
-          My Profile
-        </Link>
-        <Link to="/orderHistory" className="link link-hover">
-          Order History
-        </Link>
-      </nav>
-      <nav>
-        <div className="grid grid-flow-col gap-4">
-          <a>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              className="fill-current"
-            >
-              <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
-            </svg>
-          </a>
-          <a>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              className="fill-current"
-            >
-              <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
-            </svg>
-          </a>
-          <a>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              className="fill-current"
-            >
-              <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
-            </svg>
-          </a>
-        </div>
-      </nav>
-      <aside>
+    <footer className=" bg-lime-950 text-white p-10">
+      <div className="flex justify-between mb-10 max-w-[1200px] mx-auto">
+        {/* Title & Description */}
+        <nav className="items-start *:space-y-2">
+          <h2 className="text-left mb-6">Subnestic</h2>
+          {/* Contact Us */}
+          <nav className="*:text-left *:text-xs *:md:text-sm">
+            <p className="flex items-start gap-2">
+              <FaLocationDot />
+              16 sector,Cantonment,
+              <br /> Uttara-1209 ,Dhaka-1214
+            </p>
+            <p className="flex items-center gap-2">
+              <FaWhatsapp />
+              +880-1319444554
+            </p>
+            <p className="flex items-center gap-2">
+              <IoMail />
+              mailus@gmail.com
+            </p>
+          </nav>
+        </nav>
+        {/* Page Routes */}
+        <nav className="flex flex-col *:text-sm space-y-2 text-left">
+          <h4 className="underline">Quick Links</h4>
+          <Link to="/" className="link link-hover">
+            Home
+          </Link>
+          <Link to="/testimonials" className="link link-hover">
+            Testimonials
+          </Link>
+          <Link to="/newsLetter" className="link link-hover">
+            NewsLetter
+          </Link>
+          <Link to="/myProfile" className="link link-hover">
+            My Profile
+          </Link>
+          <Link to="/orderHistory" className="link link-hover">
+            Order History
+          </Link>
+        </nav>
+        <nav className="flex flex-col *:text-sm *:space-y-2 text-left">
+          <ul className="*:hover:underline">
+            <h4 className="underline">Legal</h4>
+            <li>
+              <a href="">Terms & Conditions</a>
+            </li>
+            <li>
+              <a href="">License</a>
+            </li>
+            <li>
+              <a href="">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="">All Right Reserved</a>
+            </li>
+            <li>
+              <a href=""></a>
+            </li>
+          </ul>
+        </nav>
+
+        {/* Social Icon */}
+        <nav className="flex flex-col justify-end gap-3">
+          <ul className="flex text-xl md:text-2xl w-full justify-start space-x-4">
+            <li>
+              <a
+                className="hover:text-primary"
+                href="https://www.facebook.com/"
+              >
+                <FaFacebook />
+              </a>
+            </li>
+            <li>
+              <a className="hover:text-primary" href="https://x.com/">
+                <FaXTwitter />
+              </a>
+            </li>
+            <li>
+              <a
+                className="hover:text-primary"
+                href="https://www.linkedin.com/"
+              >
+                <FaLinkedin />
+              </a>
+            </li>
+          </ul>
+
+          {/* form */}
+          <form className="w-full">
+            <div className="join">
+              <input
+                type="text"
+                placeholder="Email for NewsLetter"
+                className="input input-bordered join-item"
+              />
+              <button className="btn btn-primary join-item">Subscribe</button>
+            </div>
+          </form>
+        </nav>
+      </div>
+      <div className="text-xs md:text-sm">
         <p>
-          Copyright © {new Date().getFullYear()} - All right reserved by ACME
-          Industries Ltd
+          Copyright © {new Date().getFullYear()} - All right reserved by
+          Subnestic .com
         </p>
-      </aside>
+      </div>
     </footer>
   );
 };
