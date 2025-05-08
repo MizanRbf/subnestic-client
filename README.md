@@ -1,12 +1,47 @@
-# Subnestic
+# 🎁 Subnestic — Your Personalized Subscription Box Experience
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Subnestic is a sleek and scalable web application that allows users to explore, review, and subscribe to curated subscription boxes tailored to their preferences. Designed with performance, accessibility, and modern UX in mind, this project showcases front-end development with real-world features. It includes user authentication, protected routes, reviews, and an interactive user interface.
+
+---
+
+
+## ✨ Key Features
 
 Currently, two official plugins are available:
+🔐 Firebase Authentication (Login, Register, Logout)
+🕵️‍♂️ Protected Routes using React Router v7
+📅 Dynamic Box Details with parameter-based routing
+⭐ Review Submission & Display
+📥 Order History stored locally
+📉 Interactive Toasts via React Toastify
+🌐 Responsive & Mobile Friendly Design using TailwindCSS & DaisyUI
+⚡ Fast builds with Vite
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## ⚙️ Tech Stack
+Frontend: React 19, React DOM
+Routing: React Router v7
+UI Framework: TailwindCSS 4, DaisyUI
+Authentication: Firebase v11
+Notifications: React Toastify
+Icons: React Icons
+Charts: Recharts
+Swiper Carousel: SwiperJS
+Alerts: SweetAlert2
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Live Demo
+Coming soon at
+
+## 🔗 Links
+Terms & Conditions
+Privacy Policy
+Facebook Page
+Support Email
+## 🙋‍♂️ Developer
+Name: Mizanur Rahman
+Role: Frontend Developer (React.js)
+Portfolio: [Coming Soon]
+## © Copyright
+
+
+Copyright © 2025 - All rights reserved by Subnestic.
