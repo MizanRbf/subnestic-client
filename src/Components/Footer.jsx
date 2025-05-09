@@ -95,16 +95,18 @@ const Footer = () => {
           </ul>
 
           {/* form */}
-          <form className="w-full">
-            <div className="join">
-              <input
-                type="text"
-                placeholder="Email for NewsLetter"
-                className="input input-bordered join-item"
-              />
-              <button className="btn btn-primary join-item">Subscribe</button>
-            </div>
-          </form>
+          <div className="">
+            <form className="w-full">
+              <div className="join">
+                <input
+                  type="text"
+                  placeholder="Email for NewsLetter"
+                  className="input input-bordered join-item"
+                />
+                <button className="btn btn-primary join-item">Subscribe</button>
+              </div>
+            </form>
+          </div>
         </nav>
       </div>
       <div className="text-xs md:text-sm text-center">
