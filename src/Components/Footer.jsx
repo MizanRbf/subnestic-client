@@ -43,8 +43,8 @@ const Footer = () => {
           <Link to="/myProfile" className="link link-hover">
             My Profile
           </Link>
-          <Link to="/orderHistory" className="link link-hover">
-            Order History
+          <Link to="/subscriptionHistory" className="link link-hover">
+            Subscription History
           </Link>
         </nav>
         <nav className="flex flex-col *:text-sm *:space-y-2 text-left">

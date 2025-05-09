@@ -6,7 +6,6 @@ import { Link, useLoaderData } from "react-router";
 import { getStoredBoxes } from "../LocalStorage/Storage";
 import HistoryCard from "../Components/HIstoryCard";
 import ReChart from "../Components/ReChart";
-
 const SubscriptionHistory = () => {
   const boxesData = useLoaderData();
   const [histories, setHistories] = useState([]);
@@ -38,25 +37,16 @@ const SubscriptionHistory = () => {
           }`}
         >
           <h1 className="text-2xl md:text-4xl font-bold mb-2">
-            Your Subscription Histories
+            Your Subscription History
           </h1>
           <p>
             Visit homepage and subscribe more updated box as your preference.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
+        <div>
           {/* Rechart */}
           <div>
             <ReChart histories={histories}></ReChart>
-          </div>
-
-          {/* History Card */}
-          <div>
-            <div className="">
-              {histories.map((history) => (
-                <HistoryCard key={history.id} history={history}></HistoryCard>
-              ))}
-            </div>
           </div>
         </div>
         <div
@@ -64,16 +54,25 @@ const SubscriptionHistory = () => {
             histories.length == "0" ? "hidden" : "block"
           }`}
         ></div>
+        {/* History Card */}
+        <div>
+          <div className="">
+            {histories.map((history) => (
+              <HistoryCard key={history.id} history={history}></HistoryCard>
+            ))}
+          </div>
+        </div>
 
         {/* Empty data Alert */}
         <div
-          className={`my-30 text-center md:my-10 ${
+          className={`text-center md:my-10 ${
             histories.length == "0" ? "block" : "hidden"
           }`}
         >
-          <p className="text-2xl md:text-4xl font-bold mb-2">
-            You have not subscribe any box yet
-          </p>
+          <h1 className="">
+            You don't have any active subscription boxes at the moment.
+          </h1>
+
           <p className="mb-10 mt-6">
             Visit homepage and subscribe any box as your preference.
           </p>

@@ -74,7 +74,7 @@ const BoxDetails = () => {
       localStorage.setItem(`subscriptionDate-${boxId}`, today);
 
       toast.success("Subscribed Successfully");
-      navigate("/orderHistory");
+      navigate("/subscriptionHistory");
     }
   };
 

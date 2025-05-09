@@ -72,7 +72,7 @@ export const router = createBrowserRouter([
     element: <ErrorPage></ErrorPage>,
   },
   {
-    path: "/orderHistory",
+    path: "/subscriptionHistory",
     loader: () => fetch("/subscription_box.json"),
     hydrateFallbackElement: <Loader></Loader>,
     element: (

@@ -62,7 +62,7 @@ const Navbar = () => {
               <Link to="/myProfile">My Profile</Link>
             </li>
             <li>
-              <Link to="/orderHistory">Order History</Link>
+              <Link to="/subscriptionHistory">Subscription History</Link>
             </li>
           </ul>
         </div>
@@ -85,7 +85,7 @@ const Navbar = () => {
             <NavLink to="/myProfile">My Profile</NavLink>
           </li>
           <li>
-            <NavLink to="/orderHistory">Order History</NavLink>
+            <NavLink to="/subscriptionHistory">Subscription History</NavLink>
           </li>
         </ul>
       </div>
