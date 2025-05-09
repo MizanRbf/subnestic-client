@@ -17,6 +17,7 @@ Currently, two official plugins are available:
 - Responsive & Mobile Friendly Design using TailwindCSS & DaisyUI
 - Fast builds with Vite
 
+---
 
 ## ⚙️ NPM Packages
 
@@ -30,8 +31,11 @@ This project uses the following major NPM packages:
 - Swiper Carousel: SwiperJS
 - Alerts: SweetAlert2, React Toastify
 
+---
+
 ## ✨ Live URL
 Coming soon at
 
+---
 
 Copyright © 2025 - All rights reserved by Subnestic.
