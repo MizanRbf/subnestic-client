@@ -20,7 +20,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar bg-base-100 px-4 md:px-0 max-w-[1200px] mx-auto py-4 md:static fixed top-0 right-0 left-0 z-9">
+    <div className="navbar bg-base-100 px-4 max-w-[1200px] mx-auto py-4 md:static fixed top-0 right-0 left-0 z-9">
       {!isHome && (
         <div className="absolute border-b border-slate-200 w-full top-[72px] left-0 right-0"></div>
       )}

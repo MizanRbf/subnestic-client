@@ -10,10 +10,10 @@ const NewsLetter = () => {
       <Helmet>
         <title>Subnestic || NewsLetter</title>
       </Helmet>
-      <header className="w-11/12 mx-auto">
+      <header className="max-w-[1200px] mx-auto">
         <Navbar></Navbar>
       </header>
-      <main className="w-11/12 mx-auto md:min-h-[calc(100vh-460px)] mt-10 md:mt-40">
+      <main className="max-w-[1200px] mx-auto md:min-h-[calc(100vh-460px)] mt-30 md:mt-20 md:mb-20 px-4">
         <div className="text-center mb-6">
           <h1 className="mb-3 text-center text-primary">
             Get Surprises in Your Inbox!
