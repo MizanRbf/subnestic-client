@@ -66,21 +66,31 @@ const BoxDetails = () => {
 
   const handleOrderHistory = (boxId) => {
     const added = addToStored(boxId);
-    if (!added) {
-      toast.error("Already Subscribed!");
+    if (added) {
+      return toast.error("Already Subscribed!");
     } else {
-      // set Subscription Date
       const today = new Date().toDateString();
       localStorage.setItem(`subscriptionDate-${boxId}`, today);
-
-      toast.success("Subscribed Successfully");
+      toast("Subscribed Successfully");
       navigate("/subscriptionHistory");
     }
   };
+  // const handleOrderHistory = (boxId) => {
+  //   const added = addToStored(boxId);
+  //   if (!added) {
+  //     return toast.error("Already Subscribed!");
+  //   }
+  //   // set Subscription Date
+  //   const today = new Date().toDateString();
+  //   localStorage.setItem(`subscriptionDate-${boxId}`, today);
+  //   alert("working");
+  //   // toast("Subscribed Successfully");
+  //   toast.error("Subscribed!");
+  //   navigate("/subscriptionHistory");
+  // };
 
   return (
     <>
-      <ToastContainer></ToastContainer>
       <div className="min-h-[calc(100vh-288px)] max-w-[1200px] mx-auto md:px-10 lg:px-0">
         <header>
           <Navbar></Navbar>

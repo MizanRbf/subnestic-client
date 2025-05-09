@@ -10,7 +10,7 @@ import { Helmet } from "react-helmet-async";
 const Register = () => {
   const { setUser, setLoading } = useContext(AuthContext);
   const navigate = useNavigate();
-  const [errorMessage, setErrorMessage] = useState("");
+  // const [errorMessage, setErrorMessage] = useState("");
   const [passError, setPassError] = useState("");
   const [showPassword, setShowPassword] = useState(false);
 
@@ -36,7 +36,8 @@ const Register = () => {
         navigate(location.state || "/");
       })
       .catch((error) => {
-        setErrorMessage(error.message);
+        // setErrorMessage(error.message);
+        console.log(error);
       });
   };
 
@@ -64,7 +65,7 @@ const Register = () => {
       return;
     }
 
-    setErrorMessage("");
+    // setErrorMessage("");
 
     // CreateUser
 
@@ -73,7 +74,8 @@ const Register = () => {
         updateUser({ displayName: name, photoURL: photo })
           .then(() => {})
           .catch((error) => {
-            setErrorMessage(error);
+            console.log(error);
+            // setErrorMessage(error);
           });
         Swal.fire({
           title: "Good job!",
@@ -83,7 +85,8 @@ const Register = () => {
         navigate("/auth/login");
       })
       .catch((error) => {
-        setErrorMessage(error.message);
+        console.log(error);
+        // setErrorMessage(error.message);
       });
   };
   return (
@@ -158,11 +161,11 @@ const Register = () => {
             </button>
           </form>
           {/* ErrorMessage */}
-          <p className="text-red-500">{errorMessage}</p>
+          {/* <p className="text-red-500">{errorMessage}</p> */}
 
           <p className="text-center">
             Already have an account?{" "}
-            <Link className="text-red-600" to="/auth/login">
+            <Link className="text-red-600 hover:underline" to="/auth/login">
               Login
             </Link>
           </p>

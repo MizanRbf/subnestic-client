@@ -10,7 +10,7 @@ import { LuEyeClosed } from "react-icons/lu";
 const Login = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  const [errorMessage, setErrorMessage] = useState("");
+  // const [errorMessage, setErrorMessage] = useState("");
   const emailRef = useRef();
 
   // Context
@@ -38,7 +38,8 @@ const Login = () => {
         navigate(location.state || "/");
       })
       .catch((error) => {
-        setErrorMessage(error.message);
+        console.log(error);
+        // setErrorMessage(error.message);
       });
   };
   // Handle Login
@@ -47,7 +48,7 @@ const Login = () => {
     const email = e.target.email.value;
     const password = e.target.password.value;
 
-    setErrorMessage("");
+    // setErrorMessage("");
 
     // Login User
     loginUser(email, password)
@@ -62,7 +63,8 @@ const Login = () => {
         navigate(location.state || "/");
       })
       .catch((error) => {
-        setErrorMessage(error.message);
+        console.log(error);
+        // setErrorMessage(error.message);
       });
   };
   // Reset Password
@@ -76,7 +78,8 @@ const Login = () => {
         })
       )
       .catch((error) => {
-        setErrorMessage(error.message);
+        console.log(error);
+        // setErrorMessage(error.message);
       });
   };
 
@@ -120,13 +123,15 @@ const Login = () => {
                 {showPassword ? <FaEye size={15} /> : <LuEyeClosed size={15} />}
               </div>
             </div>
-            <Link onClick={handleForgetPassword}>Forgot password?</Link>
+            <Link className="hover:underline" onClick={handleForgetPassword}>
+              Forgot password?
+            </Link>
             <button type="submit" className="btn btn-primary mt-4 text-white">
               Login
             </button>
           </form>
-          {/* Error */}
-          <p className="text-red-500">{errorMessage}</p>
+          {/* Error
+          <p className="text-red-500">{errorMessage}</p> */}
 
           {/* Or */}
           <div className="flex items-center gap-2 my-2">
@@ -170,7 +175,7 @@ const Login = () => {
           </button>
           <p className="text-center">
             Don't have an account?{" "}
-            <Link className="text-red-600" to="/auth/register">
+            <Link className="text-red-600 hover:underline" to="/auth/register">
               Register
             </Link>
           </p>

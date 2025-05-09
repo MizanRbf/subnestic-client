@@ -12,12 +12,12 @@ const getStoredBoxes =()=>{
   const addToStored =(id)=>{
   const storedBoxesData = getStoredBoxes();
   if(storedBoxesData.includes(id)){
-    return false;
+    return true;
   }
   else{
     storedBoxesData.push(id);
     setToStorage(storedBoxesData);
-    return true;
+    return false;
   }
   };
   
