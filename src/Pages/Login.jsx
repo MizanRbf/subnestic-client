@@ -3,6 +3,8 @@ import { Link, useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../Provider/AuthContext";
 import Swal from "sweetalert2";
 import { Helmet } from "react-helmet-async";
+import { FaEye } from "react-icons/fa";
+import { LuEyeClosed } from "react-icons/lu";
 
 // Login Component
 const Login = () => {
@@ -15,6 +17,13 @@ const Login = () => {
   // Context
   const { setUser, loginUser, setLoading, googleLogin, resetPassword } =
     useContext(AuthContext);
+
+  const [showPassword, setShowPassword] = useState(false);
+
+  // Handle ShowPassword
+  const handleShowPassword = () => {
+    setShowPassword(!showPassword);
+  };
 
   // Handle Google SignIn
   const handleGoogleSignIn = () => {
@@ -59,7 +68,7 @@ const Login = () => {
   };
 
   return (
-    <div className="card bg-base-100 w-full max-w-sm mx-auto mt-20 shrink-0 shadow-2xl">
+    <div className="card bg-base-100 w-full max-w-xs md:max-w-sm mx-auto mt-30 md:mt-10 shrink-0 shadow-2xl mb-20 border border-slate-200">
       <Helmet>
         <title>Subnestic || Login</title>
       </Helmet>
@@ -69,6 +78,7 @@ const Login = () => {
         <form onSubmit={handleLoginForm} className="fieldset">
           {/* Email */}
           <label className="label">Email Address</label>
+
           <input
             type="email"
             name="email"
@@ -78,12 +88,20 @@ const Login = () => {
           />
           {/* Password */}
           <label className="label">Password</label>
-          <input
-            type="password"
-            name="password"
-            className="input w-full"
-            placeholder="Enter your password"
-          />
+          <div className="relative">
+            <input
+              type={showPassword ? "text" : "password"}
+              name="password"
+              className="input w-full"
+              placeholder="Enter your password"
+            />
+            <div
+              className="absolute top-3 right-5 cursor-pointer"
+              onClick={handleShowPassword}
+            >
+              {showPassword ? <FaEye size={15} /> : <LuEyeClosed size={15} />}
+            </div>
+          </div>
           <div onClick={handleForgetPassword}>
             <a className="link link-hover">Forgot password?</a>
           </div>
