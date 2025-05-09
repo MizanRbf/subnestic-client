@@ -80,11 +80,15 @@ const Register = () => {
   };
   return (
     <div className="">
+      <div className="bg-primary absolute top-[72px] right-0 left-0 bottom-[30%] md:bottom-[40%]"></div>
       <div className="card bg-base-100 w-full max-w-xs md:max-w-sm mt-30 mx-auto shrink-0 shadow-2xl border border-slate-200 mb-20 md:mt-20">
         <Helmet>
           <title>Subnestic || Register</title>
         </Helmet>
         <div className="card-body">
+          <div className="flex justify-center">
+            <img className="w-50 mb-3" src="/assets/logo.png" alt="" />
+          </div>
           <h2 className="text-center">Register your account</h2>
           <hr className="border-base-300 my-3" />
 
