@@ -12,7 +12,6 @@ const Login = () => {
   const navigate = useNavigate();
   const [errorMessage, setErrorMessage] = useState("");
   const emailRef = useRef();
-  console.log();
 
   // Context
   const { setUser, loginUser, setLoading, googleLogin, resetPassword } =
@@ -28,7 +27,16 @@ const Login = () => {
   // Handle Google SignIn
   const handleGoogleSignIn = () => {
     googleLogin()
-      .then(() => {})
+      .then((result) => {
+        setUser(result.user);
+        setLoading(false);
+        Swal.fire({
+          title: "Good job!",
+          text: "You have logged in successfully!",
+          icon: "success",
+        });
+        navigate(location.state || "/");
+      })
       .catch((error) => {
         setErrorMessage(error.message);
       });
@@ -61,7 +69,12 @@ const Login = () => {
   const handleForgetPassword = () => {
     const email = emailRef.current.value;
     resetPassword(email)
-      .then()
+      .then(
+        Swal.fire({
+          title: "Check your inbox!",
+          text: "Password reset email sent",
+        })
+      )
       .catch((error) => {
         setErrorMessage(error.message);
       });
@@ -107,9 +120,7 @@ const Login = () => {
                 {showPassword ? <FaEye size={15} /> : <LuEyeClosed size={15} />}
               </div>
             </div>
-            <div onClick={handleForgetPassword}>
-              <a className="link link-hover">Forgot password?</a>
-            </div>
+            <Link onClick={handleForgetPassword}>Forgot password?</Link>
             <button type="submit" className="btn btn-primary mt-4 text-white">
               Login
             </button>

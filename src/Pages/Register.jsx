@@ -8,6 +8,7 @@ import { Helmet } from "react-helmet-async";
 
 // Register Component
 const Register = () => {
+  const { setUser, setLoading } = useContext(AuthContext);
   const navigate = useNavigate();
   const [errorMessage, setErrorMessage] = useState("");
   const [passError, setPassError] = useState("");
@@ -25,7 +26,14 @@ const Register = () => {
   const handleGoogleSignIn = () => {
     googleLogin()
       .then((result) => {
-        console.log(result);
+        setUser(result.user);
+        setLoading(false);
+        Swal.fire({
+          title: "Good job!",
+          text: "You have logged in successfully!",
+          icon: "success",
+        });
+        navigate(location.state || "/");
       })
       .catch((error) => {
         setErrorMessage(error.message);
