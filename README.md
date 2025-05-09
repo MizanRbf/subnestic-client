@@ -42,6 +42,7 @@ This project uses the following major NPM packages:
 - Swiper Carousel: SwiperJS
 - Alerts: SweetAlert2, React Toastify
 - Dynamic title: Helmet
+- Date Formet: Date Fns
 
 ---
 
