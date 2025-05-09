@@ -20,7 +20,8 @@ const NewsLetter = () => {
           </h1>
           <p className="text-sm">
             Enjoy monthly deliveries filled with handpicked goodies you'll love.
-            From exclusive items to everyday essentials, our subscription boxes
+            From exclusive items to everyday essentials, our subscription boxes{" "}
+            <br className="hidden lg:block" />
             bring excitement, value, and a personalized touch right to your
             doorstep.
           </p>

@@ -23,8 +23,9 @@ const Testimonials = () => {
           </h1>
           <p className="text-sm">
             Our customers love what we do! Their feedback reflects the quality,
-            care, and commitment we bring to every service. Read their stories
-            and see why they trust us.
+            care, and commitment we bring to every service.{" "}
+            <br className="hidden lg:block" /> Read their stories and see why
+            they trust us.
           </p>
         </div>
         <TestimonialsSlider></TestimonialsSlider>

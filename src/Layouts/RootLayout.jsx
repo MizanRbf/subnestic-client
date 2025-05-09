@@ -12,7 +12,7 @@ const RootLayout = () => {
       </header>
 
       {/* Main */}
-      <main className="w-11/12 mx-auto min-h-[calc(100vh-288px)]">
+      <main className="max-w-[1200px] px-4 mx-auto min-h-[calc(100vh-288px)] mt-[72px] md:mt-0">
         <Outlet></Outlet>
       </main>
 
