@@ -7,15 +7,26 @@ Subnestic is a sleek and scalable web application that allows users to explore, 
 
 ## ✨ Key Features
 
-Currently, two official plugins are available:
-- Firebase Authentication (Login, Register, Logout)
-- Protected Routes using React Router v7
-- Dynamic Box Details with parameter-based routing
-- Review Submission & Display
-- Order History stored locally
-- Interactive Toasts via React Toastify
-- Responsive & Mobile Friendly Design using TailwindCSS & DaisyUI
-- Fast builds with Vite
+-  Authentication System:
+User registration, login, logout using Firebase Authentication with context-based auth management.
+- Protected Routes:
+Route guarding using custom PrivateRoute and AuthContext.
+- Subscription Box Service:
+Dynamic rendering of box details using subscription_box.json.
+- User Reviews & Testimonials:
+Users can submit reviews, and testimonial sliders are displayed using local data.
+- Order History with Local Storage:
+Order data is stored and retrieved locally from the browser using a custom Storage.js module.
+- Structured Routing & Layouts:
+Organized routes with AuthLayout and RootLayout using React Router v7.
+- Data Visualization:
+Charts rendered using ReChart.jsx.
+- FNewsletter Subscription:
+Integrated newsletter component with submission handling.
+- Responsive UI:
+Built using Tailwind CSS and DaisyUI, fully mobile-friendly and accessible.
+- Fast Development with Vite:
+Modern build tool ensures quick dev experience and optimized builds.
 
 ---
 
@@ -30,6 +41,7 @@ This project uses the following major NPM packages:
 - Charts: Recharts
 - Swiper Carousel: SwiperJS
 - Alerts: SweetAlert2, React Toastify
+- Dynamic title: Helmet
 
 ---
 
