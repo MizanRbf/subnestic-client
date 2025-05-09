@@ -19,6 +19,10 @@
 button{
   @apply btn bg-primary text-white hover:bg-lime-600
 }
+.btn-sub{
+  @apply rounded-bl-lg rounded-br-lg rounded-tr-none rounded-tl-none
+}
+
 form .reviewButton{
  @apply rounded-tr-4xl rounded-br-4xl rounded-tl-none rounded-bl-none py-6
 }

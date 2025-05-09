@@ -69,6 +69,10 @@ const BoxDetails = () => {
     if (!added) {
       toast.error("Already Subscribed!");
     } else {
+      // set Subscription Date
+      const today = new Date().toDateString();
+      localStorage.setItem(`subscriptionDate-${boxId}`, today);
+
       toast.success("Subscribed Successfully");
       navigate("/orderHistory");
     }
@@ -119,8 +123,8 @@ const BoxDetails = () => {
               <div>
                 <span className="font-semibold">Features:</span>
                 <div className="flex gap-2 *:rounded-2xl *:bg-purple-50 *:text-purple-500 *:px-3 *:py-1 *:text-xs mt-2">
-                  {features?.map((feature) => (
-                    <p>{feature}</p>
+                  {features?.map((feature, index) => (
+                    <p key={index}>{feature}</p>
                   ))}
                 </div>
               </div>
@@ -129,8 +133,8 @@ const BoxDetails = () => {
               <div>
                 <span className="font-semibold">Subscription_Benefits:</span>
                 <div className="flex gap-2 mt-2 *:rounded-4xl *:px-6 *:py-1 *:bg-lime-50 *:text-primary *:text-xs">
-                  {subscription_benefits?.map((benefit) => (
-                    <p>{benefit}</p>
+                  {subscription_benefits?.map((benefit, index) => (
+                    <p key={index}>{benefit}</p>
                   ))}
                 </div>
               </div>

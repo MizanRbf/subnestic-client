@@ -6,11 +6,14 @@ const Reviews = ({ reviews }) => {
   return (
     <div className="w-[30%]">
       <h3 className="mb-2">Reviews</h3>
-      {reviews.map((review) => (
-        <p className="border p-2 rounded-sm border-slate-200 mb-2 w-fit">
-          <p className="font-bold">{user.displayName} </p>
+      {reviews.map((review, index) => (
+        <h5
+          key={index}
+          className="border p-2 rounded-sm border-slate-200 mb-2 w-fit"
+        >
+          <span className="font-bold">{user.displayName} </span>
           {review}
-        </p>
+        </h5>
       ))}
     </div>
   );

@@ -6,7 +6,7 @@ import { Link, NavLink } from "react-router";
 
 const Footer = () => {
   return (
-    <footer className=" bg-lime-950 text-white p-10">
+    <footer className=" bg-lime-950 text-white p-10 md:mt-20">
       <div className="flex flex-col lg:flex-row *:mb-8 justify-between mb-10 max-w-[1200px] mx-auto md:px-4">
         {/* Title & Description */}
         <nav className="items-start *:space-y-2">

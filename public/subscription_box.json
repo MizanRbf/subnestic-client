@@ -5,8 +5,10 @@
     "category": "Food & Culture",
     "thumbnail": "https://i.ibb.co.com/DHhBvHJM/91-D7-Wsnz1b-L-SL1500.jpg",
     "banner": "https://snackverse.com/images/snackverse-banner.jpg",
-    "frequency": "Monthly",
-    "price": 29.99,
+    "frequency": "Yearly",
+    "original_price": 359.99,
+    "price": 319.99,
+    "discount_percentage": 11.1,
     "description": "Enjoy a handpicked selection of international snacks from a different country every month.",
     "features": [
       "10+ Unique Snacks",
@@ -28,7 +30,9 @@
     "thumbnail": "https://i.ibb.co.com/7mgwZvt/rvd9r2nwle281.jpg",
     "banner": "https://example.com/images/book-box-banner.jpg",
     "frequency": "Monthly",
-    "price": 24.99,
+    "original_price": 39.99,
+    "price": 29.99,
+    "discount_percentage": 25,
     "description": "Discover bestselling novels, indie gems, and exclusive author content in every box.",
     "features": [
       "1 Hardcover Book",
@@ -49,8 +53,10 @@
     "category": "Pets",
     "thumbnail": "https://i.ibb.co.com/GQKLX4Vv/maxresdefault.jpg",
     "banner": "https://example.com/images/pet-box-banner.jpg",
-    "frequency": "Bi-Monthly",
-    "price": 34.99,
+    "frequency": "Yearly",
+    "original_price": 479.88,
+    "price": 439.99,
+    "discount_percentage": 8.3,
     "description": "Delight your pet with premium toys, treats, and grooming supplies every two months.",
     "features": [
       "Customized by Pet Type & Size",
@@ -72,7 +78,9 @@
     "thumbnail": "https://i.ibb.co.com/MkxqQxYr/il-300x300-3212067531-2z4r.jpg",
     "banner": "https://example.com/images/wellness-box-banner.jpg",
     "frequency": "Monthly",
-    "price": 39.95,
+    "original_price": 60.00,
+    "price": 49.99,
+    "discount_percentage": 16.7,
     "description": "A mindful collection of wellness tools, aromatherapy, and self-care products to reduce stress.",
     "features": [
       "Essential Oils & Candles",
@@ -93,8 +101,10 @@
     "category": "Gardening",
     "thumbnail": "https://i.ibb.co.com/Dg88y8mg/4901.jpg",
     "banner": "https://example.com/images/garden-box-banner.jpg",
-    "frequency": "Quarterly",
-    "price": 44.00,
+    "frequency": "Yearly",
+    "original_price": 196.00,
+    "price": 179.99,
+    "discount_percentage": 8.2,
     "description": "Grow your indoor garden with seasonal seeds, pots, and tools – perfect for small spaces.",
     "features": [
       "3 Seasonal Seed Packs",
@@ -116,7 +126,9 @@
     "thumbnail": "https://i.ibb.co.com/bj9V93GW/DALL-E-2024-05-08-12-28-01-A-detailed-collage-image-showing-three-examples-of-trendy-adult-craft-kit.webp",
     "banner": "https://www.realsimple.com/thmb/0kE1qN3xE7nKz1qJv3eZ6Qb0Xx8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/adults-and-crafts-crate-7107404-1-2000-1f6a3e1b9c7a4e1c9e3b4b5f6c8a9e2a.jpg",
     "frequency": "Monthly",
-    "price": 27.50,
+    "original_price": 39.99,
+    "price": 34.99,
+    "discount_percentage": 12.5,
     "description": "Unleash your creativity with fun DIY projects and craft supplies delivered monthly.",
     "features": [
       "Complete DIY Craft Kit",
@@ -131,137 +143,148 @@
     "ratings": 4.7,
     "number_of_reviews": 219
   },
-    {
-      "id": 7,
-      "name": "Tech Trend Box",
-      "category": "Gadgets & Technology",
-      "thumbnail": "https://i.ibb.co.com/7xMLXVsq/download.jpg",
-      "banner": "https://example.com/images/tech-box-banner.jpg",
-      "frequency": "Monthly",
-      "price": 49.99,
-      "description": "Stay ahead with trending tech gadgets, accessories, and innovative tools each month.",
-      "features": [
-        "Latest Tech Accessories",
-        "Gadget Reviews",
-        "Bonus App Recommendations"
-      ],
-      "subscription_benefits": [
-        "Early Gadget Trials",
-        "Monthly Tech Magazine",
-        "Member-Only Discounts"
-      ],
-      "ratings": 4.4,
-      "number_of_reviews": 301
-    },
-    {
-      "id": 8,
-      "name": "Coffee Lovers Crate",
-      "category": "Food & Beverage",
-      "thumbnail": "https://i.ibb.co.com/GvmgdMWx/download.jpg",
-      "banner": "https://example.com/images/coffee-box-banner.jpg",
-      "frequency": "Monthly",
-      "price": 32.50,
-      "description": "Premium coffee beans, brewing tools, and barista tips for enthusiasts & pros.",
-      "features": [
-        "2 Packs of Premium Beans",
-        "Barista Tips Booklet",
-        "Brewing Accessories"
-      ],
-      "subscription_benefits": [
-        "Virtual Brewing Classes",
-        "Early Bean Access",
-        "Coffee Connoisseur Badge"
-      ],
-      "ratings": 4.9,
-      "number_of_reviews": 410
-    },
-    {
-      "id": 9,
-      "name": "Eco Essentials Box",
-      "category": "Sustainability",
-      "thumbnail": "https://i.ibb.co.com/Pz6KCjdv/images.jpg",
-      "banner": "https://example.com/images/eco-box-banner.jpg",
-      "frequency": "Monthly",
-      "price": 26.00,
-      "description": "Eco-friendly lifestyle items that help reduce waste and promote green living.",
-      "features": [
-        "Zero-Waste Products",
-        "Reusable Alternatives",
-        "Sustainable Living Guide"
-      ],
-      "subscription_benefits": [
-        "Carbon Offset Support",
-        "Green Points Reward",
-        "Tree Planted per Box"
-      ],
-      "ratings": 4.6,
-      "number_of_reviews": 212
-    },
-    {
-      "id": 10,
-      "name": "Fitness Fuel Crate",
-      "category": "Fitness & Nutrition",
-      "thumbnail": "https://i.ibb.co.com/HTzPzdgj/91p-Sl-Ja-AIk-L-AC-UF1000-1000-QL80.jpg",
-      "banner": "https://example.com/images/fitness-box-banner.jpg",
-      "frequency": "Monthly",
-      "price": 37.99,
-      "description": "Power your workouts with healthy snacks, gear, and exclusive fitness content.",
-      "features": [
-        "Protein Snacks",
-        "Resistance Bands",
-        "Workout Routine Cards"
-      ],
-      "subscription_benefits": [
-        "Access to Training Videos",
-        "Meal Plan PDFs",
-        "Coach Q&A Sessions"
-      ],
-      "ratings": 4.8,
-      "number_of_reviews": 367
-    },
-    {
-      "id": 11,
-      "name": "Gamer's Loot Crate",
-      "category": "Gaming",
-      "thumbnail": "https://i.ibb.co.com/wNQGxK5H/download.jpg",
-      "banner": "https://example.com/images/gaming-box-banner.jpg",
-      "frequency": "Monthly",
-      "price": 35.00,
-      "description": "Exclusive collectibles, gear, and digital content for every kind of gamer.",
-      "features": [
-        "Game-Themed Apparel",
-        "Collectibles & Pins",
-        "Game Codes & Trials"
-      ],
-      "subscription_benefits": [
-        "Early Access to Betas",
-        "Giveaway Entries",
-        "Exclusive Game Updates"
-      ],
-      "ratings": 4.7,
-      "number_of_reviews": 442
-    },
-    {
-      "id": 12,
-      "name": "Kiddo Discovery Box",
-      "category": "Children & Education",
-      "thumbnail": "https://i.ibb.co.com/Q1c9Hgq/stemdiscoveryboxes.webp",
-      "banner": "https://example.com/images/kids-box-banner.jpg",
-      "frequency": "Monthly",
-      "price": 29.00,
-      "description": "Fun and educational activities for kids aged 5–10 with science, art, and puzzles.",
-      "features": [
-        "STEM Projects",
-        "Storybook & Activity Book",
-        "Creative Art Supplies"
-      ],
-      "subscription_benefits": [
-        "Parent Guide PDF",
-        "Access to Learning Videos",
-        "Monthly Challenge Certificate"
-      ],
-      "ratings": 4.9,
-      "number_of_reviews": 389
-    }
-  ]
-  
+  {
+    "id": 7,
+    "name": "Tech Trend Box",
+    "category": "Gadgets & Technology",
+    "thumbnail": "https://i.ibb.co.com/7xMLXVsq/download.jpg",
+    "banner": "https://example.com/images/tech-box-banner.jpg",
+    "frequency": "Yearly",
+    "original_price": 59.99,
+    "price": 49.99,
+    "discount_percentage": 16.7,
+    "description": "Stay ahead with trending tech gadgets, accessories, and innovative tools each month.",
+    "features": [
+      "Latest Tech Accessories",
+      "Gadget Reviews",
+      "Bonus App Recommendations"
+    ],
+    "subscription_benefits": [
+      "Early Gadget Trials",
+      "Monthly Tech Magazine",
+      "Member-Only Discounts"
+    ],
+    "ratings": 4.4,
+    "number_of_reviews": 301
+  },
+  {
+    "id": 8,
+    "name": "Coffee Lovers Crate",
+    "category": "Food & Beverage",
+    "thumbnail": "https://i.ibb.co.com/GvmgdMWx/download.jpg",
+    "banner": "https://example.com/images/coffee-box-banner.jpg",
+    "frequency": "Monthly",
+    "original_price": 38.00,
+    "price": 24.99,
+    "discount_percentage": 34.3,
+    "description": "Premium coffee beans, brewing tools, and barista tips for enthusiasts & pros.",
+    "features": [
+      "2 Packs of Premium Beans",
+      "Barista Tips Booklet",
+      "Brewing Accessories"
+    ],
+    "subscription_benefits": [
+      "Virtual Brewing Classes",
+      "Early Bean Access",
+      "Coffee Connoisseur Badge"
+    ],
+    "ratings": 4.9,
+    "number_of_reviews": 410
+  },
+  {
+    "id": 9,
+    "name": "Eco Essentials Box",
+    "category": "Sustainability",
+    "thumbnail": "https://i.ibb.co.com/Pz6KCjdv/images.jpg",
+    "banner": "https://example.com/images/eco-box-banner.jpg",
+    "frequency": "Yearly",
+    "original_price": 30.00,
+    "price": 26.00,
+    "discount_percentage": 13.3,
+    "description": "Eco-friendly lifestyle items that help reduce waste and promote green living.",
+    "features": [
+      "Zero-Waste Products",
+      "Reusable Alternatives",
+      "Sustainable Living Guide"
+    ],
+    "subscription_benefits": [
+      "Carbon Offset Support",
+      "Green Points Reward",
+      "Tree Planted per Box"
+    ],
+    "ratings": 4.6,
+    "number_of_reviews": 212
+  },
+  {
+    "id": 10,
+    "name": "Fitness Fuel Crate",
+    "category": "Fitness & Nutrition",
+    "thumbnail": "https://i.ibb.co.com/HTzPzdgj/91p-Sl-Ja-AIk-L-AC-UF1000-1000-QL80.jpg",
+    "banner": "https://example.com/images/fitness-box-banner.jpg",
+    "frequency": "Monthly",
+    "original_price": 43.00,
+    "price": 32.99,
+    "discount_percentage": 23.3,
+    "description": "Power your workouts with healthy snacks, gear, and exclusive fitness content.",
+    "features": [
+      "Protein Snacks",
+      "Resistance Bands",
+      "Workout Routine Cards"
+    ],
+    "subscription_benefits": [
+      "Access to Training Videos",
+      "Meal Plan PDFs",
+      "Coach Q&A Sessions"
+    ],
+    "ratings": 4.8,
+    "number_of_reviews": 367
+  },
+  {
+    "id": 11,
+    "name": "Gamer's Loot Crate",
+    "category": "Gaming",
+    "thumbnail": "https://i.ibb.co.com/wNQGxK5H/download.jpg",
+    "banner": "https://example.com/images/gaming-box-banner.jpg",
+    "frequency": "Yearly",
+    "original_price": 39.99,
+    "price": 35.00,
+    "discount_percentage": 12.5,
+    "description": "Exclusive collectibles, gear, and digital content for every kind of gamer.",
+    "features": [
+      "Game-Themed Apparel",
+      "Collectibles & Pins",
+      "Game Codes & Trials"
+    ],
+    "subscription_benefits": [
+      "Early Access to Betas",
+      "Giveaway Entries",
+      "Exclusive Game Updates"
+    ],
+    "ratings": 4.7,
+    "number_of_reviews": 442
+  },
+  {
+    "id": 12,
+    "name": "Kiddo Discovery Box",
+    "category": "Children & Education",
+    "thumbnail": "https://i.ibb.co.com/Q1c9Hgq/stemdiscoveryboxes.webp",
+    "banner": "https://example.com/images/kids-box-banner.jpg",
+    "frequency": "Monthly",
+    "original_price": 33.00,
+    "price": 24.99,
+    "discount_percentage": 24.2,
+    "description": "Fun and educational activities for kids aged 5–10 with science, art, and puzzles.",
+    "features": [
+      "STEM Projects",
+      "Storybook & Activity Book",
+      "Creative Art Supplies"
+    ],
+    "subscription_benefits": [
+      "Parent Guide PDF",
+      "Access to Learning Videos",
+      "Monthly Challenge Certificate"
+    ],
+    "ratings": 4.9,
+    "number_of_reviews": 389
+  }
+]

@@ -10,8 +10,8 @@ import PrivateRoute from "../Provider/PrivateRoute";
 import Loader from "../Components/Loader";
 import Testimonials from "../Pages/Testimonials";
 import NewsLetter from "../Pages/NewsLetter";
-import OrderHistory from "../Pages/OrderHistory";
 import BoxDetails from "../Components/BoxDetails";
+import SubscriptionHistory from "../Pages/SubscriptionHistory";
 
 export const router = createBrowserRouter([
   {
@@ -77,7 +77,7 @@ export const router = createBrowserRouter([
     hydrateFallbackElement: <Loader></Loader>,
     element: (
       <PrivateRoute>
-        <OrderHistory></OrderHistory>
+        <SubscriptionHistory></SubscriptionHistory>
       </PrivateRoute>
     ),
   },

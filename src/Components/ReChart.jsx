@@ -30,7 +30,7 @@ const ReChart = ({ histories }) => {
 
   return (
     <div
-      className={`border border-slate-300 rounded-2xl flex justify-center mb-20 mt-30 md:mt-10 ${
+      className={`border border-slate-300 rounded-2xl flex justify-center ${
         histories.length == "0" ? "hidden" : "block"
       }`}
     >

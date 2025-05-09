@@ -7,10 +7,9 @@ import { getStoredBoxes } from "../LocalStorage/Storage";
 import HistoryCard from "../Components/HIstoryCard";
 import ReChart from "../Components/ReChart";
 
-const OrderHistory = () => {
+const SubscriptionHistory = () => {
   const boxesData = useLoaderData();
   const [histories, setHistories] = useState([]);
-  console.log(histories);
 
   useEffect(() => {
     const storedBox = getStoredBoxes();
@@ -24,22 +23,14 @@ const OrderHistory = () => {
   return (
     <div>
       <Helmet>
-        <title>Subnestic || OrderHistory</title>
+        <title>Subnestic || SubscriptionHistory</title>
       </Helmet>
       <header>
         <Navbar></Navbar>
       </header>
 
       {/* Main Section */}
-      <main className="max-w-[1200px] mx-auto min-h-[calc(100vh-288px)] mt-10 md:px-10 lg:px-0">
-        {/* Rechart */}
-        <ReChart histories={histories}></ReChart>
-        <div
-          className={`text-center mb-10 ${
-            histories.length == "0" ? "hidden" : "block"
-          }`}
-        ></div>
-
+      <main className="max-w-[1200px] mx-auto min-h-[calc(100vh-288px)] mt-30 md:mt-10 px-4">
         {/* Order History */}
         <div
           className={`text-center mt-10 mb-10 ${
@@ -47,12 +38,32 @@ const OrderHistory = () => {
           }`}
         >
           <h1 className="text-2xl md:text-4xl font-bold mb-2">
-            Your Order Histories
+            Your Subscription Histories
           </h1>
           <p>
             Visit homepage and subscribe more updated box as your preference.
           </p>
         </div>
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
+          {/* Rechart */}
+          <div>
+            <ReChart histories={histories}></ReChart>
+          </div>
+
+          {/* History Card */}
+          <div>
+            <div className="">
+              {histories.map((history) => (
+                <HistoryCard key={history.id} history={history}></HistoryCard>
+              ))}
+            </div>
+          </div>
+        </div>
+        <div
+          className={`text-center mb-10 ${
+            histories.length == "0" ? "hidden" : "block"
+          }`}
+        ></div>
 
         {/* Empty data Alert */}
         <div
@@ -70,13 +81,6 @@ const OrderHistory = () => {
             Subscribe a box
           </Link>
         </div>
-        <div>
-          <div className="my-10">
-            {histories.map((history) => (
-              <HistoryCard history={history}></HistoryCard>
-            ))}
-          </div>
-        </div>
       </main>
       <footer>
         <Footer></Footer>
@@ -85,4 +89,4 @@ const OrderHistory = () => {
   );
 };
 
-export default OrderHistory;
+export default SubscriptionHistory;

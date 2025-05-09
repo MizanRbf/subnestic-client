@@ -24,7 +24,7 @@ const MyProfile = () => {
 
   return (
     <>
-      <div className="bg-primary absolute top-[72px] right-0 left-0 bottom-[40%]"></div>
+      <div className="bg-primary absolute top-[72px] right-0 left-0 bottom-[40%] md:bottom-[50%]"></div>
       <div className="max-w-[1200px] mx-auto md:mt-20 mt-40 mb-20">
         <Helmet>
           <title>Subnestic || My_Profile</title>
