@@ -9,15 +9,15 @@ const Testimonials = () => {
   // const testimonials = useLoaderData();
   // console.log(testimonials);
   return (
-    <div>
+    <div className="">
       <Helmet>
         <title>Subnestic || Testimonials</title>
       </Helmet>
       <header className="w-11/12 mx-auto">
         <Navbar></Navbar>
       </header>
-      <main className="w-11/12 mx-auto min-h-[calc(100vh-425px)] mt-30">
-        <div className="text-center mb-6">
+      <main className="max-w-[1200px] mx-auto min-h-[calc(100vh-425px)] px-4 mt-25 md:mt-20 md:px-10 mb-20">
+        <div className="text-center mb-6 ">
           <h1 className="mb-3 text-center text-primary">
             Customer Testimonials
           </h1>
