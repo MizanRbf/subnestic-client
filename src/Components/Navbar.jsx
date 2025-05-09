@@ -66,7 +66,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <img className="w-50" src="/assets/logo.png" alt="" />
+        <img className="w-30 md:w-50" src="/assets/logo.png" alt="" />
       </div>
 
       {/* Menubar for Large Device */}
@@ -96,7 +96,7 @@ const Navbar = () => {
         {user && (
           <div className="relative group cursor-pointer ring-primary ring-2 ring-offset-2 rounded-full">
             <img
-              className=" rounded-full min-w-[35px] h-[35px]"
+              className=" rounded-full min-w-[30px] md:min-w-[35px] h-[30px] md:h-[35px]"
               src={user.photoURL}
               alt="User"
             />
