@@ -47,7 +47,7 @@ This project uses the following major NPM packages:
 ---
 
 ## ✨ Live URL
-https://subnestic.web.app/boxDetails/1
+https://subnestic.web.app/
 
 ---
 
